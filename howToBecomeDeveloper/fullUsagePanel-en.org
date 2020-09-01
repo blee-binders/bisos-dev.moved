@@ -40,6 +40,48 @@
 ** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos")][@ *bisos* @]]    ::  Leaf: /bisos/
 ** [[elisp:(org-shifttab)][<)]] E|
 ####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Create Or Copy Your SSH Keys" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Create Or Copy Your SSH Keys:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? t :label "SSH Keys" :command "ls -ld ~/.ssh" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /SSH Keys/ |]] :: [[elisp:(lsip-local-run-command "ls -ld ~/.ssh")][ls -ld ~/.ssh]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+*** If desired copy github authorized keys to ~/.ssh
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Adding a new SSH key to your GitHub account" :anchor "" :extraInfo "URL"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Adding a new SSH key to your GitHub account:* |]]  URL  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** 
+** https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account
+** 
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Auth Clone All BxRepos" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Auth Clone All BxRepos:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? nil :label "Clone" :command "/opt/bisosProvisioner/venv/py2/bin/bx-gitReposBases -v 20 --baseDir=/bisos/git/auth/bxRepos --pbdName=bxReposRoot --vcMode=auth  -i pbdUpdate all" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Clone/ :: [[elisp:(lsip-local-run-command "/opt/bisosProvisioner/venv/py2/bin/bx-gitReposBases -v 20 --baseDir=/bisos/git/auth/bxRepos --pbdName=bxReposRoot --vcMode=auth  -i pbdUpdate all")][/opt/bisosProvisioner/venv/py2/bin/bx-gitReposBases -v 20 --baseDir=/bisos/git/auth/bxRepos --pbdName=bxReposRoot --vcMode=auth  -i pbdUpdate all]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Git pull All BxRepos" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Git pull All BxRepos:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? nil :label "Clone" :command "NOTYET" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Clone/ :: [[elisp:(lsip-local-run-command "NOTYET")][NOTYET]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Set BxRepos To Auth or To Anon" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Set BxRepos To Auth or To Anon:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? nil :label "View" :command "ls -l /bisos/git/bxRepos" :comment "Where is the end of symlink?" :afterComment "auth or anon"
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Clone/ :: [[elisp:(lsip-local-run-command "ls -l /bisos/git/bxRepos")][ls -l /bisos/git/bxRepos]] *|*  =Where is the end of symlink?= *|*  auth or anon  [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? nil :label "Set" :command "NOTYET ls -l /bisos/git/bxRepos" :comment "Set To Auth" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Set/ :: [[elisp:(lsip-local-run-command "NOTYET ls -l /bisos/git/bxRepos")][NOTYET ls -l /bisos/git/bxRepos]] *|*  =Set To Auth= *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? nil :label "View" :command "NOTYET ls -l /bisos/git/bxRepos" :comment "Set To Anon" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /View/ :: [[elisp:(lsip-local-run-command "ls -l /bisos/git/bxRepos")][ls -l /bisos/git/bxRepos]] *|*  =Set To Anon= *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
 ####+END
