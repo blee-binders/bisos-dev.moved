@@ -48,6 +48,9 @@
 ** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /SSH Keys/ |]] :: [[elisp:(lsip-local-run-command "ls -ld ~/.ssh")][ls -ld ~/.ssh]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 *** If desired copy github authorized keys to ~/.ssh
+####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? t :label "SSH Keys" :command "lcaSshAdmin.sh -h -v -n showRun -p localUser=bystar -f -i userKeyVerify" :comment "and userKeyUpdate if needed" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /SSH Keys/ |]] :: [[elisp:(lsip-local-run-command "lcaSshAdmin.sh -h -v -n showRun -p localUser=bystar -f -i userKeyVerify")][lcaSshAdmin.sh -h -v -n showRun -p localUser=bystar -f -i userKeyVerify]] *|*  =and userKeyUpdate if needed= *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Adding a new SSH key to your GitHub account" :anchor "" :extraInfo "URL"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Adding a new SSH key to your GitHub account:* |]]  URL  [[elisp:(org-shifttab)][<)]] E|
@@ -59,8 +62,8 @@
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Auth Clone All BxRepos:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
-####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? nil :label "Clone" :command "/opt/bisosProvisioner/venv/py2/bin/bx-gitReposBases -v 20 --baseDir=/bisos/git/auth/bxRepos --pbdName=bxReposRoot --vcMode=auth  -i pbdUpdate all" :comment "" :afterComment ""
-** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Clone/ :: [[elisp:(lsip-local-run-command "/opt/bisosProvisioner/venv/py2/bin/bx-gitReposBases -v 20 --baseDir=/bisos/git/auth/bxRepos --pbdName=bxReposRoot --vcMode=auth  -i pbdUpdate all")][/opt/bisosProvisioner/venv/py2/bin/bx-gitReposBases -v 20 --baseDir=/bisos/git/auth/bxRepos --pbdName=bxReposRoot --vcMode=auth  -i pbdUpdate all]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? nil :label "Clone" :command "bx-gitReposBases -v 20 --baseDir=/bisos/git/auth/bxRepos --pbdName=bxReposRoot --vcMode=auth  -i pbdUpdate all" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Clone/ :: [[elisp:(lsip-local-run-command "bx-gitReposBases -v 20 --baseDir=/bisos/git/auth/bxRepos --pbdName=bxReposRoot --vcMode=auth  -i pbdUpdate all")][bx-gitReposBases -v 20 --baseDir=/bisos/git/auth/bxRepos --pbdName=bxReposRoot --vcMode=auth  -i pbdUpdate all]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Git pull All BxRepos" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
