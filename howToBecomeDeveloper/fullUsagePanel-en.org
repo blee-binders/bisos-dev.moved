@@ -82,6 +82,12 @@
 ####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? nil :label "Set" :command "NOTYET ls -l /bisos/git/bxRepos" :comment "Set To Auth" :afterComment ""
 ** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Set/ :: [[elisp:(lsip-local-run-command "NOTYET ls -l /bisos/git/bxRepos")][NOTYET ls -l /bisos/git/bxRepos]] *|*  =Set To Auth= *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
+####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? nil :label "Set" :command "bisosDevEnvManage.sh -i bxReposAuthSet" :comment "Set To Auth" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Set/ :: [[elisp:(lsip-local-run-command "bisosDevEnvManage.sh -i bxReposAuthSet")][bisosDevEnvManage.sh -i bxReposAuthSet]] *|*  =Set To Auth= *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? nil :label "Set" :command "bisosDevEnvManage.sh -i bxReposAnonSet" :comment "Set To Anon" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Set/ :: [[elisp:(lsip-local-run-command "bisosDevEnvManage.sh -i bxReposAnonSet")][bisosDevEnvManage.sh -i bxReposAnonSet]] *|*  =Set To Anon= *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
 ####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? nil :label "View" :command "NOTYET ls -l /bisos/git/bxRepos" :comment "Set To Anon" :afterComment ""
 ** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /View/ :: [[elisp:(lsip-local-run-command "ls -l /bisos/git/bxRepos")][ls -l /bisos/git/bxRepos]] *|*  =Set To Anon= *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
