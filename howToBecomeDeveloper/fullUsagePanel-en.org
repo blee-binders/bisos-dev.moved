@@ -48,6 +48,13 @@
 ** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /SSH Keys/ |]] :: [[elisp:(lsip-local-run-command "ls -ld ~/.ssh")][ls -ld ~/.ssh]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 *** If desired copy github authorized keys to ~/.ssh
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Setup Git User Environment" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Setup Git User Environment:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? t :label "SSH Keys" :command "git config --global user.email bystar@bisos.net" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /SSH Keys/ |]] :: [[elisp:(lsip-local-run-command "git config --global user.email bystar@bisos.net")][git config --global user.email bystar@bisos.net]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
 ####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? t :label "SSH Keys" :command "lcaSshAdmin.sh -h -v -n showRun -p localUser=bystar -f -i userKeyVerify" :comment "and userKeyUpdate if needed" :afterComment ""
 ** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /SSH Keys/ |]] :: [[elisp:(lsip-local-run-command "lcaSshAdmin.sh -h -v -n showRun -p localUser=bystar -f -i userKeyVerify")][lcaSshAdmin.sh -h -v -n showRun -p localUser=bystar -f -i userKeyVerify]] *|*  =and userKeyUpdate if needed= *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
