@@ -72,10 +72,6 @@
 ####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? nil :label "Clone" :command "bx-gitReposBases -v 20 --baseDir=/bisos/git/auth/bxRepos --pbdName=bxReposRoot --vcMode=auth  -i pbdUpdate all" :comment "" :afterComment ""
 ** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Clone/ :: [[elisp:(lsip-local-run-command "bx-gitReposBases -v 20 --baseDir=/bisos/git/auth/bxRepos --pbdName=bxReposRoot --vcMode=auth  -i pbdUpdate all")][bx-gitReposBases -v 20 --baseDir=/bisos/git/auth/bxRepos --pbdName=bxReposRoot --vcMode=auth  -i pbdUpdate all]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Git pull All BxRepos" :anchor "" :extraInfo ""
-* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Git pull All BxRepos:* |]]    [[elisp:(org-shifttab)][<)]] E|
-####+END
 ####+BEGIN: blee:panel:unix:cmnd :outLevel 2 :sep nil :folding? nil :label "Clone" :command "NOTYET" :comment "" :afterComment ""
 ** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Clone/ :: [[elisp:(lsip-local-run-command "NOTYET")][NOTYET]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
