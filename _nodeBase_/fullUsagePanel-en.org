@@ -51,7 +51,22 @@
 ** 
 ** TODO Move All bins Preps
 ** TODO Define full set of provision targets
-** 
+** TODO Get bx-gitRepos.sh to be complete and in use
+** TODO Create /bisos/var/core/cache/
+** TODO sudo apt install ubuntu-restricted-extras
+** TODO Comment field of bystar accont inculdes a ':' which is a bug 
+** TODO DVD Watching And Kodi
+sudo apt-get install libavcodec58
+sudo apt install libdvdnav4 libdvdread7 gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly libdvd-pkg
+sudo apt-get install             ffmpeg
+sudo apt-get install regionset
+sudo regionset # 1
+sudo add-apt-repository multiverse
+sudo apt install libdvd-pkg
+sudo dpkg-reconfigure libdvd-pkg
+sudo dpkg-reconfigure libdvd-pkg
+   SCHEDULED: <2020-09-13 Sun>
+** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Virtualization" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Virtualization:* |]]    [[elisp:(org-shifttab)][<)]] E|
