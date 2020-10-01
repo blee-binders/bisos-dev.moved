@@ -66,6 +66,8 @@ sudo apt install libdvd-pkg
 sudo dpkg-reconfigure libdvd-pkg
 sudo dpkg-reconfigure libdvd-pkg
    SCHEDULED: <2020-09-13 Sun>
+** TODO Make sure pip2 install bisos.currents is included
+** TODO 
 ** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Virtualization" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
