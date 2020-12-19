@@ -52,7 +52,7 @@
 ** TODO Move All bins Preps
 ** TODO Define full set of provision targets
 ** TODO Get bx-gitRepos.sh to be complete and in use
-** TODO Create /bisos/var/core/cache/
+** DONE Create /bisos/var/core/cache/
 ** TODO sudo apt install ubuntu-restricted-extras
 ** TODO Comment field of bystar accont inculdes a ':' which is a bug 
 ** TODO DVD Watching And Kodi
@@ -90,18 +90,18 @@ them. Please see your Linux system's documentation for more information.
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bootstrap/_nodeBase_/")][@ ~bootstrap~ @]]   ::  [[elisp:(org-cycle)][| /bootstrap/ |]]  [[elisp:(org-shifttab)][<)]] E|
 ####+END
-####+BEGIN: blee:bxPanel:linkWithTreeElem :model "auto" :sep t :outLevel 2 :agenda t :foldDesc "auto" :destDesc "auto" :dest "/bisos/panels/bisos/core/bootstrap/baseBisosPlatform/"
+####+BEGIN: blee:bxPanel:linkWithTreeElem :model "auto" :sep t :outLevel 2 :agenda t :foldDesc "auto" :destDesc "auto" :dest "/bisos/panels/bisos/core/bootstrap/afterBaseSteps/"
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bootstrap/baseBisosPlatform/")][@ ~baseBisosPlatform~ @]]   ::  [[elisp:(org-cycle)][| /baseBisosPlatform/ |]]  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bootstrap/afterBaseSteps/")][@ ~afterBaseSteps~ @]]   ::  [[elisp:(org-cycle)][| /afterBaseSteps/ |]]  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 
-####+BEGIN: blee:bxPanel:linkWithTreeElem :model "auto" :sep t :outLevel 2 :agenda t :foldDesc "auto" :destDesc "auto" :dest "/bisos/panels/bisos/core/storage/baseDirs/_nodeBase_"
+####+BEGIN: blee:bxPanel:linkWithTreeElem :model "auto" :sep t :outLevel 2 :agenda t :foldDesc "auto" :destDesc "auto" :dest "/bisos/panels/bisos/core/disks/_nodeBase_"
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/storage/baseDirs/_nodeBase_")][@ ~baseDirs~ @]]   ::  [[elisp:(org-cycle)][| /baseDirs/ |]]  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/disks/_nodeBase_")][@ ~disks~ @]]   ::  [[elisp:(org-cycle)][| /disks/ |]]  [[elisp:(org-shifttab)][<)]] E|
 ####+END
-####+BEGIN: blee:bxPanel:linkWithTreeElem :model "auto" :sep t :outLevel 2 :agenda t :foldDesc "auto" :destDesc "auto" :dest "/bisos/panels/bisos/core/storage/disks/_nodeBase_"
+####+BEGIN: blee:bxPanel:linkWithTreeElem :model "auto" :sep t :outLevel 2 :agenda t :foldDesc "auto" :destDesc "auto" :dest "/bisos/panels/bisos/core/bxeAndBxo/_nodeBase_"
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/storage/disks/_nodeBase_")][@ ~disks~ @]]   ::  [[elisp:(org-cycle)][| /disks/ |]]  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/bxeAndBxo/_nodeBase_")][@ ~bxeAndBxo~ @]]   ::  [[elisp:(org-cycle)][| /bxeAndBxo/ |]]  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
