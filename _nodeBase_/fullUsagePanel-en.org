@@ -19,8 +19,8 @@
 * [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_   General Panels ::   [[img-link:file:/bisos/blee/env/images/bystarInside.jpg][http://www.by-star.net]] *|*  [[elisp:(find-file "/libre/ByStar/InitialTemplates/activeDocs/listOfDocs/fullUsagePanel-en.org")][BxDE Top Panel]] *|* [[elisp:(blee:bnsm:panel-goto "/libre/ByStar/InitialTemplates/activeDocs/planning/Main")][ByStar Planning]]
 
 *   =Decedent Panels=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/dev/howToBecomeDeveloper")][howToBecomeDeveloper]] *|* 
-*   =Sibling Panles=   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/_nodeBase_")][ =core= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/dev/_nodeBase_")][ =dev= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/model/_nodeBase_")][ =model= ]] *|* 
-*   =Ancestor Panles=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos")][bisos]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels")][panels]] *|* 
+*   =Sibling Panels=   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/_nodeBase_")][ =core= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/dev/_nodeBase_")][ =dev= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/model/_nodeBase_")][ =model= ]] *|* 
+*   =Ancestor Panles=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/_nodeBase_")][ =bisos= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/_nodeBase_")][ =panels= ]] *|* 
 *                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_                          [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Overview" :anchor "Panel"
@@ -34,14 +34,15 @@
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Panel Tree Navigation:* |]] <<panelTreeNav>>   [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:bxPanel:linedTreeNavigator :model "auto" :outLevel 2
-** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     ~Decedent Links Of:~ ~dev~ 
-** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     ~Siblings Links Of:~ ~dev~ 
+** [[elisp:(show-all)][|N]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]    <<~dev~>> ~nil:~ :inDblock 
+** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/dev/howToBecomeDeveloper")][@ *howToBecomeDeveloper* @]]    ::  Leaf: /howToBecomeDeveloper/
+** [[elisp:(show-all)][|N]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]    <<~dev~>> ~nil:~ :inDblock 
 ** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/core/_nodeBase_")][@ =core= @]]    ::  Node: /core/
 ** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/dev/_nodeBase_")][@ =dev= @]]    ::  Node: /dev/
 ** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/model/_nodeBase_")][@ =model= @]]    ::  Node: /model/
-** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]     ~Ancestor Links Of:~ ~dev~ 
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos")][@ *bisos* @]]    ::  Leaf: /bisos/
-** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels")][@ *panels* @]]    ::  Leaf: /panels/
+** [[elisp:(show-all)][|N]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]    <<~dev~>> ~nil:~ :inDblock 
+** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos/_nodeBase_")][@ =bisos= @]]    ::  Node: /bisos/
+** [[elisp:(show-all)][|n]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/_nodeBase_")][@ =panels= @]]    ::  Node: /panels/
 ** [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Problems And Next Steps" :anchor "" :extraInfo ""
@@ -67,7 +68,7 @@ sudo dpkg-reconfigure libdvd-pkg
 sudo dpkg-reconfigure libdvd-pkg
    SCHEDULED: <2020-09-13 Sun>
 ** TODO Make sure pip2 install bisos.currents is included
-** TODO 
+** TODO Run bx-gitRepos -i cachedLsRefresh -- During bootstrap
 ** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Virtualization" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
@@ -144,6 +145,7 @@ them. Please see your Linux system's documentation for more information.
 # eval: (setq-local ~primaryMajorMode 'org-mode)
 # eval: (setq-local ~blee:panelUpdater nil)
 # eval: (setq-local ~blee:dblockEnabler nil)
+# eval: (setq-local ~blee:dblockController "interactive")
 # eval: (img-link-overlays)
 # eval: (set-fill-column 115)
 # eval: (blee:fill-column-indicator/enable)
