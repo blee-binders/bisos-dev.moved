@@ -51,6 +51,7 @@
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Current Development Context:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** 
+** TODO Early on somewhere we should: bisosCurrentsManage.sh -h -v -n showRun -i setParam cur_bxoId_parent prs_bisos
 ** TODO Where should this happen or be documented: sysCharManage.sh -h -v -n showRun -p bxoId=sysChar -i cntnr_netName_interfaceUpdate privA enp0s31f6 enabled
 ** TODO Build on usgBpos Controller to create -niches to fully set environments.
 ** TODO Do the usgEnv end-to-end testing in virtual machines, then try them on chromebooks.
