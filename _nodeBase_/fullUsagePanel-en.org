@@ -116,6 +116,8 @@
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Problems And Next Steps:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
+** 
+** TODO Cleanups: Delete All typeset RcsId=.$Id: From all ShIcms
 ** TODO bxoGitlab.py acctList is subject to pagination and needs users = gl.users.list(all=True)
    class acctList(icm.Cmnd):
     cmndParamsMandatory = [ ]
@@ -159,7 +161,7 @@ Comment out auto line in /etc/network/interfaces
 auto swp1
 iface swp1
     link-down yes
-** TODO Global Terminology Change Overview (content) |
+** TODO Global Terminogc logy Change Overview (content) |
 *** _Sys Types_
 *** Box is either Pure Or Host
 *** Guest is peer to Box
