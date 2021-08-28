@@ -53,9 +53,9 @@
 ** 
 ** TODO Early on somewhere we should: bisosCurrentsManage.sh -h -v -n showRun -i setParam cur_bxoId_parent prs_bisos
 ** TODO Where should this happen or be documented: sysCharManage.sh -h -v -n showRun -p bxoId=sysChar -i cntnr_netName_interfaceUpdate privA enp0s31f6 enabled
-** TODO Build on usgBpos Controller to create -niches to fully set environments.
+** DONE Build on usgBpos Controller to create -niches to fully set environments.
 ** TODO Do the usgEnv end-to-end testing in virtual machines, then try them on chromebooks.
-** TODO gcipher should be pip installed in the begining
+** DONE Added to lcaPythonCommonBinsPrep.sh -- gcipher should be pip installed in the begining
 ** TODO ln -s ~/bpos/usageEnvs/fullUse/blee BUE
 ** TODO Fresh BOX Deployment Next Steps
 *** 
@@ -74,7 +74,7 @@
 *** TODO On HSS-1002, install boxHostingPlatform.sh
 *** TODO Setup VSS-xxx 
 *** 
-** TODO Setup a SitePanel with needed dblocks
+** TODO SYS-MGMT: Setup a SitePanel with needed dblocks
 *** 
 *** Organize the SitePanel -- boxes, networks, containers, etc
 *** Create dblocks for containers
@@ -106,7 +106,6 @@
 *** 
 ** TODO Continue with /bisos/bsip/bin/sysCharGuestMaterialize.sh
 ** TODO Continue with /bisos/bsip/bin/sysCharDeploy.sh
-
 ** Redo RepoCreation based on /bxo/r3/iso/pmc_clusterNeda-containers/VAG-deb10- 
 **** Get rid of identity.fps/  netAttachments.fps/  platformInfo.fps/
 ** Experiment with specific on top of generic in -- sysCharGuestMaterialize.sh
@@ -116,7 +115,7 @@
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Problems And Next Steps:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
-** TODO bxoGitlab.py acctList is subject to pagination and needs users = gl.users.list(all=True)
+** DONE bxoGitlab.py acctList is subject to pagination and needs users = gl.users.list(all=True)
    class acctList(icm.Cmnd):
     cmndParamsMandatory = [ ]
     cmndParamsOptional = [ ]
@@ -176,13 +175,12 @@ iface swp1
 ** TODO Global Terminology Change For Next Major Release -- bxo becomes bpo -- ByStar Portable Object
 ** TODO Global Terminology Change For Next Major Release -- sysChar becomes cntnr -- Container
 ** TODO Global Terminology Change For Next Major Release -- -p bxoId= becomes -p cntnr=
-** TODO lpEach.sh shoudle read its inputs optionally as lines or as words
+** TODO lpEach.sh should read its inputs optionally as lines or as words
 ** TODO lpEach.sh should optionally execute its produced lines or pass through lpEach.sh | bxRunLines
 ** TODO Add to sysCharDeploy.sh -- ssh-keygen -f "/bxo/usg/bystar/.ssh/known_hosts" -R "192.168.0.55"
 ** TODO in sysCharGuest, git rid of testNet
-
-** TODO sysCharDevel.sh prompts for github confirmation -- cant be automated run
-** TODO Absorb autostart in /bisos/bsip/bin/hostVirshManage.sh
+** TODO IMPORTANT sysCharDevel.sh prompts for github confirmation -- cant be automated run
+** TODO IMPORTANT Absorb autostart in /bisos/bsip/bin/hostVirshManage.sh
 sudo systemctl stop libvirt-guests   # stops VMs
 sudo systemctl restart libvirtd      # starts VMs agains
 sudo virsh net-autostart --network vagrant-libvirt
@@ -204,13 +202,13 @@ sudo virsh net-list --all
 ** TODO Initial lpCurrents
     VIS-1002-5: ** [202]: bxeRealize.sh -n showRun -v -h -p bxoId=prs_bisos -p privacy=priv -p bxeDesc=/bisos/var/bxo/construct/priv/prs_bisos/rbxe/bxeDesc -i bxoAcctCreate 
     VIS-1002-5: EH_,bxeRealize.sh,lpCurrentsGet,104: PROBLEM: Missing bxoAcctsList
-** TODO apt install nmap in sysEssentials
+** DONE apt install nmap in sysEssentials
 ** TODO Where should -- sudo apt install firmware-linux -- for deb 11 go?
 ** TODO Create sysCharSetup.sh -- fillup content from ~sysChar/sys/bin
 ** TODO Revisit  sysCharHostPreps.sh
-** TODO Setup Devel/Stable in ~sysChar/var/devel
-** TODO Based on Devel/Stable -- do auth-git or anon-git
-** TODO Based on Devel/Stable -- Also activte pmp_VAG-deb11_ in addition to pmp_VAG-deb11_
+** DONE Setup Devel/Stable in ~sysChar/var/devel
+** DONE Based on Devel/Stable -- do auth-git or anon-git
+** DONE Based on Devel/Stable -- Also activte pmp_VAG-deb11_ in addition to pmp_VAG-deb11_
 ** TODO has bad permission /bxo/usg/bystar/.ssh/id_rsa -- probably inherited from /bxo
 ** TODO /bisos/bsip/bin/bxoPubGithubManage.sh git clone should depend on dev and perhaps use github auth
 ** TODO onSysInvokation only. Some functions should only run on thisSys and not on otherwise.
@@ -226,16 +224,15 @@ sleep-inactive-ac-type='blank'
 ** WAITING Early git config --global setups -- Done in ~/.bashrc Needs Testing
 git config --global init.defaultBranch master
 git config --global pull.rebase false
-** WAITING Complete howToBecomeDeveloper and add it to sysCharDeploy.sh _URGENT_ -- bisosBaseDirs-niche.sh
-** TODO /bisos/panels should be a symlink to /bisos/git/bxRepos/blee-binders _IMPORTANT_
-** TODO deb11 emacs-27 install problems *TO BE CAPTURED BLEE*
+** DONE Complete howToBecomeDeveloper and add it to sysCharDeploy.sh _URGENT_ -- bisosBaseDirs-niche.sh
+** DONE /bisos/panels should be a symlink to /bisos/git/bxRepos/blee-binders _IMPORTANT_
+** DONE deb11 emacs-27 install problems *TO BE CAPTURED BLEE*
 *** lcaEmcsSrcBinsPrep.sh line 707 duplicate with elif
 *** sudo chmod -R g+w /bisos -- deb11
 *** sudo chmod -R g+w /var/bisos
 *** DONE Missing epc package -- Important
 *** TODO Missing package org-recoll -- /bisos/blee/extPkgs/org-recoll
 ** deb10 blee does not boot with  emacs26 
-** TODO emacs-27 build need a .desktop -- run dpkg -L emacs-gtk -- look at .desktop -- add to binsPrep
 ** TODO New _docStringBegin
 function vis_siteUsgBase {
     G_funcEntry; function describeF {  G_funcEntryShow;
@@ -323,7 +320,7 @@ sudo dpkg-reconfigure libdvd-pkg
 *** Order Of Execution -- After Generic Development VMs
 *** TODO seedPypiProc.sh needs to be adopted in bsip
 *** TODO Use Keypass for passwords for credentials
-*** 
+*** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Virtualization" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Virtualization:* |]]    [[elisp:(org-shifttab)][<)]] E|
