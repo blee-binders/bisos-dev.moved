@@ -44,7 +44,7 @@
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Overview:* |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** 
-** Overview Comes Here.
+** Development Agenda and plans.
 ** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Current Development Context" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
@@ -115,7 +115,15 @@
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Problems And Next Steps:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
+<<<<<<< HEAD
 ** DONE bxoGitlab.py acctList is subject to pagination and needs users = gl.users.list(all=True)
+=======
+** 
+** TODO Re-run-as-root needs to be revisited to keep initialInvokerUser as a parameter.
+   Test it with lcaKvmBinsPrep.sh
+** TODO Cleanups: Delete All typeset RcsId=.$Id: From all ShIcms
+** TODO bxoGitlab.py acctList is subject to pagination and needs users = gl.users.list(all=True)
+>>>>>>> 970b462f3e69030a0b763a5dfaf32fc2d930c3c7
    class acctList(icm.Cmnd):
     cmndParamsMandatory = [ ]
     cmndParamsOptional = [ ]
@@ -158,7 +166,7 @@ Comment out auto line in /etc/network/interfaces
 auto swp1
 iface swp1
     link-down yes
-** TODO Global Terminology Change Overview (content) |
+** TODO Global Terminogc logy Change Overview (content) |
 *** _Sys Types_
 *** Box is either Pure Or Host
 *** Guest is peer to Box
@@ -269,7 +277,16 @@ _docStringEnd_
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *New Planned Features:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
-** 
+**
+** To ShIcm add -m option where describeF is produced with something similar to G_funcEntry and trace.
+** Facter
+    y = json.loads(subprocess.check_output(['facter', '--json']), object_hook=lambda d: namedtuple('Factset', d.keys())(*d.values()))
+
+>>> dir(y)
+['__add__', '__class__', '__contains__', '__delattr__', '__dict__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__getslice__', '__getstate__', '__gt__', '__hash__', '__init__', '__iter__', '__le__', '__len__', '__lt__', '__module__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmul__', '__setattr__', '__sizeof__', '__slots__', '__str__', '__subclasshook__', '_asdict', '_fields', '_make', '_replace', 'architecture', 'count', 'domain', 'facterversion', 'fqdn', 'gid', 'hardwareisa', 'hardwaremodel', 'hostname', 'id', 'index', 'interfaces', 'ipaddress', 'ipaddress6', 'ipaddress6_en0', 'ipaddress_en0', 'ipaddress_lo0', 'is_virtual', 'kernel', 'kernelmajversion', 'kernelrelease', 'kernelversion', 'macaddress', 'macaddress_awdl0', 'macaddress_bridge0', 'macaddress_en0', 'macaddress_en1', 'macaddress_en2', 'macaddress_p2p0', 'macosx_buildversion', 'macosx_productname', 'macosx_productversion', 'macosx_productversion_major', 'macosx_productversion_minor', 'memoryfree', 'memoryfree_mb', 'memorysize', 'memorysize_mb', 'mtu_awdl0', 'mtu_bridge0', 'mtu_en0', 'mtu_en1', 'mtu_en2', 'mtu_gif0', 'mtu_lo0', 'mtu_p2p0', 'mtu_stf0', 'netmask', 'netmask_en0', 'netmask_lo0', 'network_en0', 'network_lo0', 'operatingsystem', 'operatingsystemmajrelease', 'operatingsystemrelease', 'os', 'osfamily', 'path', 'processorcount', 'processors', 'productname', 'ps', 'puppetversion', 'rubyplatform', 'rubysitedir', 'rubyversion', 'sp_boot_mode', 'sp_boot_rom_version', 'sp_boot_volume', 'sp_cpu_type', 'sp_current_processor_speed', 'sp_kernel_version', 'sp_l2_cache_core', 'sp_l3_cache', 'sp_local_host_name', 'sp_machine_model', 'sp_machine_name', 'sp_number_processors', 'sp_os_version', 'sp_packages', 'sp_physical_memory', 'sp_platform_uuid', 'sp_secure_vm', 'sp_serial_number', 'sp_smc_version_system', 'sp_uptime', 'sp_user_name', 'swapencrypted', 'swapfree', 'swapfree_mb', 'swapsize', 'swapsize_mb', 'system_uptime', 'timezone', 'uptime', 'uptime_days', 'uptime_hours', 'uptime_seconds', 'virtual']
+
+>>> y.memorysize
+u'16.00 GB'
 ** Default daemonized emacs/blee server for remote ssh
 *** 
 *** Figure the problem with sysCharRealize.sh step when ssh-ed into target
