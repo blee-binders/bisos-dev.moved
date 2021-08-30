@@ -116,15 +116,13 @@
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Problems And Next Steps:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
-<<<<<<< HEAD
 ** DONE bxoGitlab.py acctList is subject to pagination and needs users = gl.users.list(all=True)
-=======
-** 
+** TODO Initial hostname should include .intra for qmail install
+** TODO bashrc prompt should strip .intra
 ** TODO Re-run-as-root needs to be revisited to keep initialInvokerUser as a parameter.
    Test it with lcaKvmBinsPrep.sh
 ** TODO Cleanups: Delete All typeset RcsId=.$Id: From all ShIcms
 ** TODO bxoGitlab.py acctList is subject to pagination and needs users = gl.users.list(all=True)
->>>>>>> 970b462f3e69030a0b763a5dfaf32fc2d930c3c7
    class acctList(icm.Cmnd):
     cmndParamsMandatory = [ ]
     cmndParamsOptional = [ ]
