@@ -118,6 +118,7 @@
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Problems And Next Steps:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** -
+** TODO Include bx-platformInfoManage.py in bisosInstall -- rename to bisosContainerInfo.py
 ** TODO delete "/bisos/git/bxRepos/bisos/bxio/" and bxso
 ** TODO Move /bisos/core/asc to /bisos/asc
 ** DONE bxoGitlab.py acctList is subject to pagination and needs users = gl.users.list(all=True)
