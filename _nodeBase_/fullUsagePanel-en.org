@@ -173,7 +173,7 @@ Comment out auto line in /etc/network/interfaces
 auto swp1
 iface swp1
     link-down yes
-** TODO Global Terminogc logy Change Overview (content) |
+** TODO Global Terminology Change Overview (content) |
 *** _Sys Types_
 *** Box is either Pure Or Host
 *** Guest is peer to Box
@@ -190,6 +190,7 @@ iface swp1
 ** TODO Global Terminology Change For Next Major Release -- bxo becomes bpo -- ByStar Portable Object
 ** TODO Global Terminology Change For Next Major Release -- sysChar becomes cntnr -- Container
 ** TODO Global Terminology Change For Next Major Release -- -p bxoId= becomes -p cntnr=
+** TODO BISOS Concepts -- Conviviality -- Universality -- Genercity -- Exensibility
 ** TODO lpEach.sh should read its inputs optionally as lines or as words
 ** TODO lpEach.sh should optionally execute its produced lines or pass through lpEach.sh | bxRunLines
 ** TODO Add to sysCharDeploy.sh -- ssh-keygen -f "/bxo/usg/bystar/.ssh/known_hosts" -R "192.168.0.55"
