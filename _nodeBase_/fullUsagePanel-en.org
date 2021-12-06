@@ -51,6 +51,7 @@
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Current Development Context:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** -
+** https://marulanda.me/how-to-jekyll/ git hook
 ** TODO Review /bisos/core/asc/dns/bin/seedBsrDnsAgent.sh and build on that.
 ** TODO Create a "System Container" Menu Item -- Then Development -- Then Select USG BPO
 ** TODO Early on somewhere we should: bisosCurrentsManage.sh -h -v -n showRun -i setParam cur_bxoId_parent prs_bisos
