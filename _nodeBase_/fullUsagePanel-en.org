@@ -118,7 +118,11 @@
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Problems And Next Steps:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** -
-** TODO pip install deprecated
+** TODO [#B] Start BISOS Py Framework (bpf) as a module. logging, tracing.
+** TODO  Locate all dangling symlinks with find -L
+*** locate find -L  /bisos /de /bxo  -print | grep -i "someThingThatShouldNotExist"
+** TODO [#A] pip install deprecated -- IMPORTANT AND URGENT
+SCHEDULED: <2021-12-02 Thu>
 ** TODO Include bx-platformInfoManage.py in bisosInstall -- rename to bisosContainerInfo.py
 ** TODO delete "/bisos/git/bxRepos/bisos/bxio/" and bxso
 ** TODO Move /bisos/core/asc to /bisos/asc
