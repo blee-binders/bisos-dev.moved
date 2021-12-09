@@ -51,6 +51,16 @@
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Current Development Context:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** -
+** TODO BISOS Py Framework -- OpedSubProc -- Desired Usages:
+if not (resStr := bpf.OpSubProc(outcome=cmndOutcome).sudoBash(
+    f"""a2ensite {ploneBaseDomain}.conf""",
+).stdOut):  return(icm.EH_badOutcome(cmndOutcome))
+
+if bpf.OpSubProc(outcome=cmndOutcome).bash(
+    f"""a2ensite {ploneBaseDomain}.conf""",
+).isProblematic():  return(icm.EH_badOutcome(cmndOutcome))
+
+
 ** https://marulanda.me/how-to-jekyll/ git hook
 ** TODO Review /bisos/core/asc/dns/bin/seedBsrDnsAgent.sh and build on that.
 ** TODO Create a "System Container" Menu Item -- Then Development -- Then Select USG BPO
