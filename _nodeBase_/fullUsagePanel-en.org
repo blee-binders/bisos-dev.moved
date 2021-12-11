@@ -51,7 +51,7 @@
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Current Development Context:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** -
-** On Unifications Of Operations, Remote-Operations And Commands -- And Rejecting The Model And Terminology Of Web Services
+** TODO Unifications Of Operations, Remote-Operations And Commands -- Basis For Nullification Of The Model And Terminology Of APIs And Web Services
 *** https://queue.acm.org/detail.cfm?id=1142044
 ***  https://www.altexsoft.com/blog/soap-vs-rest-vs-graphql-vs-rpc/
 ** TODO Typing hints for all commands need to be added. :parsMand "bpoId si" are all string.
