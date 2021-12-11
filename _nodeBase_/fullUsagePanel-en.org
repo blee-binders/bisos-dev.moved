@@ -51,15 +51,19 @@
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Current Development Context:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** -
+** On Unifications Of Operations, Remote-Operations And Commands -- And Rejecting The Model And Terminology Of Web Services
+*** https://queue.acm.org/detail.cfm?id=1142044
+***  https://www.altexsoft.com/blog/soap-vs-rest-vs-graphql-vs-rpc/
+** TODO Typing hints for all commands need to be added. :parsMand "bpoId si" are all string.
+*** This needs to go into bx:icm:python:cmnd:classHead
 ** TODO BISOS Py Framework -- OpedSubProc -- Desired Usages:
-if not (resStr := bpf.OpSubProc(outcome=cmndOutcome).sudoBash(
+if not (resStr := bpf.OpSubProc(outcome=cmndOutcome, log=1).sudoBash(
     f"""a2ensite {ploneBaseDomain}.conf""",
 ).stdOut):  return(icm.EH_badOutcome(cmndOutcome))
 
-if bpf.OpSubProc(outcome=cmndOutcome).bash(
+if bpf.OpSubProc(outcome=cmndOutcome, cwd=someDirBase, log=1).bash(
     f"""a2ensite {ploneBaseDomain}.conf""",
 ).isProblematic():  return(icm.EH_badOutcome(cmndOutcome))
-
 
 ** https://marulanda.me/how-to-jekyll/ git hook
 ** TODO Review /bisos/core/asc/dns/bin/seedBsrDnsAgent.sh and build on that.
