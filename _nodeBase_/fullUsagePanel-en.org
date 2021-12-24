@@ -46,11 +46,44 @@
 ** 
 ** Development Agenda and plans.
 ** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Scheduled Next Steps" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Scheduled Next Steps:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** TODO Capture automation of jekyll build
+*** +
+*** cd jekyll baseDir # from that dir
+*** sudo jekyll build -s ~pals/../var/site
+*** Get more info: Google christopherrun.com -- apache-and-jekyll + MORE LINKS
+**** +
+**** https://www.ssh.com/academy/ssh/copy-id
+**** https://www.digitalocean.com/community/tutorials/how-to-configure-ssh-key-based-authentication-on-a-linux-server
+**** https://www.digitalocean.com/community/tutorials/how-to-deploy-a-jekyll-site-using-git-hooks-on-ubuntu-16-04
+**** -
+*** -
+** TODO Complete cntnrGitShTrigger,sh
+** TODO Add si_apache2 to ByD_100002
+** TODO Add si_geneweb to ByD_100002
+** TODO Automate jekyll with git postprocessing
+** TODO Build a minimal based jekyll for libre-halaal using
+** TODO Cleanup PALS
+** TODO Try out plone3 Rebuild
+** TODO Rebuild from scratch in 198.62.92
+**
+** TODO
+** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Current Development Context" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Current Development Context:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** -
+** TODO Start using cntnrGitShTriggers.sh for all assign and registrars.
+*** +
+*** This will eliminate the need to activate the registrars. We can now just readonly clone them.
+*** This elimintaes possibility of simultanous assignments.
+*** It is an interim step before turning them to web services.
+*** -
 ** TODO Unifications Of Operations, Remote-Operations And Commands -- Basis For Nullification Of The Model And Terminology Of APIs And Web Services
 *** https://queue.acm.org/detail.cfm?id=1142044
 ***  https://www.altexsoft.com/blog/soap-vs-rest-vs-graphql-vs-rpc/
