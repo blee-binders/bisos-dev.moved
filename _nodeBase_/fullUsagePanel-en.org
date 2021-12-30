@@ -51,6 +51,8 @@
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Scheduled Next Steps:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
+** TODO Arrange for creation of du_jekyll/sites/main/dump in various steps. main gets added
+with instance. du_jekyll/sites/main needs to be parametrized in siJekyll.
 ** TODO Capture automation of jekyll build
 *** +
 *** cd jekyll baseDir # from that dir
@@ -78,8 +80,13 @@
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Current Development Context:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** -
+** fpi -- stand for File-based Performers And Invokers Model
+** fpiPerfIcmAt icmName /baseDir/name
+** fpiInvIcmAt icmName /baseDir/name  -- params and command and args
+** TODO create /bisos/var/gitSh//invoker/jekyll/ And performer to pull for work of performer.
 ** TODO Start using cntnrGitShTriggers.sh for all assign and registrars.
 *** +
+*** To be evaluated against gRPC
 *** This will eliminate the need to activate the registrars. We can now just readonly clone them.
 *** This elimintaes possibility of simultanous assignments.
 *** It is an interim step before turning them to web services.
@@ -118,7 +125,7 @@ if bpf.OpSubProc(outcome=cmndOutcome, cwd=someDirBase, log=1).bash(
 *** TODO Run a generic virtualized VM
 *** TODO Add all of the above to /bisos/bsip/bin/bxmoSysChar.sh
 *** TODO Test auto launch of VMs on re-boot
-*** 
+****
 ** TODO DHCP-Server SysChar On HSS-1002 or HSS-1003
 *** 
 *** TODO On HSS-1002, install boxHostingPlatform.sh
@@ -340,6 +347,11 @@ _docStringEnd_
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *New Planned Features:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
+** Use gRPC -- Not OpenAPI, REST, etc.
+** https://github.com/tomyjwu/python-microservices-with-grpc
+** https://realpython.com/python-microservices-grpc/
+** https://github.com/ruan65/Python-Microservices-With-gRPC
+** https://github.com/moratsam/cloud1
 ** Static Site Generators -- Selected Jekyll -- Considered: Grow, ikiwiki, Hugo, Jekyll
 ** org-reveal -- jens.lechtenboerger@wi.uni-muenster.de
 ** To ShIcm add -m option where describeF is produced with something similar to G_funcEntry and trace.
@@ -402,6 +414,65 @@ sudo dpkg-reconfigure libdvd-pkg
 *** TODO seedPypiProc.sh needs to be adopted in bsip
 *** TODO Use Keypass for passwords for credentials
 *** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Git-Shell Invoke-Perform Commands Services (GIPCS)" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Git-Shell Invoke-Perform Commands Services (GIPCS):* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** Sub-Title: Based On Expectations Complete Operations Services
+** SubSub-Title: A Replacement For The Flawed Web Services Model
+** Concepts Hierarchy -- Terminology And Implementation Hierarch
+*** +
+*** Operations And Remote Operations: invoke, perform -- params, outcome
+*** Commands: Operations mapped To command-line execution
+**** +
+**** Op-invoke = command-line execution
+**** Op-perform = call to cmnd method of Cmnd class
+**** Op-params = Cmnd-params + Cmnd-args + Cmnd-Stdin_
+**** Op-Outcome = Cmnd-exitCode + Cmnd-Stdout + Cmnd-Err
+**** -
+*** Expectation Complete Commands: All expectations are specified of: Cmnd-params + Cmnd-args + Cmnd-Stdin
+**** +
+**** Cmnd-params: name, type, values, defaults, description
+**** Cmnd-params-applcability: ...
+**** -
+*** ICM: Interactive Command Modules: Collection Of Commands in an executable
+*** Audited Invoke-Perform Execution of an ICM: AIPX at a given filePath
+**** +
+**** anyIcmp.py --insAsFPs=xxx --par1 -i cmnd arg1
+**** --
+**** aipx_inv --ipxBase=xxx -- anyIcm.py --par1 -i cmnd arg1 # no timeTags. base is ipxBase
+**** aipx_inv --ipxRoot=xxx -- anyIcm.py --par1 -i cmnd arg1 # creates a timeTag and passes timeTag as insAsFPs
+**** --
+**** aipx_perf --ipxBase=xxx # Gethers everything as fileParams.
+**** aipx_perf --ipxRoot=xxx # uses timeTags
+**** -
+*** Local Invoke-Perform Commands Services: LIPCS at a given Op Svc Multi-Unit AP (osmuAp)
+**** +
+**** osmuAp = Operations Service Multi-Unit Access Point
+**** osmuAp maps to a git-repo (or a Bpo-Repo)
+**** osmuAp has at its root: ./invs (invokations) ./state (for REST) ./files (root of FileSys) osmuSpec
+**** --
+**** lipcs_manage.py --bpoId=bpo --osmuAp=name -i create # creates osmupAP repos.
+**** lipcs_manage.py --osmuApPath=path -i create # creates osmupAP repos.
+**** --
+**** lipcs_manage.py --osmuApPath=path -i inv -- anyOsmuIcm --par1 -i cmnd1 arg1
+**** lipcs_manage.py --osmuApPath=path -i perf # searches in ./invs/
+**** -
+*** Remote Invoke-Perform Commands Services: RIPCS at a given Remote Op Svc Multi-Unit AP (rosmuAp)
+**** +
+**** rosmuAp = Remote Operations Service Multi-Unit Access Point
+**** rosmuAp maps to a git-shell-repo
+**** rosmuAp has at its root: ./apAddr / ./invs  ./state ./files rosmuSpec
+**** --
+**** gipcs_manage.py --perfAddr=act@srvr --rosmuAp=name -i create # creates osmupAP repos.
+**** --
+**** gipcs_manage.py --rosmuApPath=path -i inv -- anyOsmuIcm --par1 -i cmnd1 arg1
+**** gipcs_manage.py --rosmuApPath=path -i perf # searches in ./invs/
+**** -
+*** -
+** B|
+
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Virtualization" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Virtualization:* |]]    [[elisp:(org-shifttab)][<)]] E|
@@ -414,6 +485,7 @@ sudo dpkg-reconfigure libdvd-pkg
 as root.  If your system is using EFI Secure Boot you may need to sign the
 kernel modules (vboxdrv, vboxnetflt, vboxnetadp, vboxpci) before you can load
 them. Please see your Linux system's documentation for more information.
+**
 ** 
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Storage" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
