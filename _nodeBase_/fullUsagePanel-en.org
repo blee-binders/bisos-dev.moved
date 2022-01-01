@@ -43,7 +43,8 @@
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Overview" :anchor "Panel"
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Overview:* |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
 ####+END
-** 
+** +
+** constraints liberate liberties constrain
 ** Development Agenda and plans.
 ** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Scheduled Next Steps" :anchor "" :extraInfo ""
@@ -414,13 +415,56 @@ sudo dpkg-reconfigure libdvd-pkg
 *** TODO seedPypiProc.sh needs to be adopted in bsip
 *** TODO Use Keypass for passwords for credentials
 *** B|
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Git-Shell Invoke-Perform Commands Services (GIPCS)" :anchor "" :extraInfo ""
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Typed-Python Invoke-Perform Commands Services (IPCS)" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Git-Shell Invoke-Perform Commands Services (GIPCS):* |]]    [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Typed-Python Invoke-Perform Commands Services (IPCS):* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
-** Sub-Title: Based On Expectations Complete Operations Services
+** IPCS is a collection of IPCMs
+** IPCMs are next generation ICMs
+** IPCM's performer() method replaces ICM's cmnd()
+** IPCM's have an opSignature which defines the signature of performer()
+** opSignature includes: cmndParamsMandatory = [ ] cmndParamsOptional = [ ] cmndArgsLen = {'Min': 1, 'Max': 9999,}
+** To that we need to add: cmndStdIn, cmndArgsSpec, cmndOutcome, endOfParamsMarker?
+** Each performer() has a invoker=[cli, py, op, performer,] -- currently cmnd(interactive=False,
+** invoker= replaces asFunc and interactive
+** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Git-Shell Typed-Python Invoke-Perform Commands Services (GIPCS)" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Git-Shell Typed-Python Invoke-Perform Commands Services (GIPCS):* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** Sub-Title: Based On Expectations Complete Typed-Python Operations Specifications
 ** SubSub-Title: A Replacement For The Flawed Web Services Model
+** ---
+** The Popular Web Services Model Has Been A Costly Red Herring
+*** +
+*** Multiple attempts, re-inventing the basic simple smae thing.
+*** Informal imprecise langauge leading to chaos.
+*** Tower of babel. Wikipeia: There is no single definition for microservices.
+*** Shallow understaning with hacks on top of hacks leading to a house of cards.
+*** Failure of Data Communications, Software Language Designers and Systems Engineers
+and Security Engineers to collaborate towards standardizition
+*** A market for vendors to increase complexity in the name improvement.
+*** Shallow convergence on authentication and authorization models.
+*** ---
+*** Design Mistakes:
+*** Ill directed concepts and terminology. Client/Server vs Invoke/Perform Request/Respons vs Params/Outcome
+*** Remote Operations, should not be tied to web protocols
+*** Capabilities Of Information Schema Languages should uniformly encompass all
+*** Design style should not be intertwined with schema and protocol.
+*** -
+** ---
+** Typed-Python (and pydantic) as The Univeral Information Schema Language
+*** +
+*** https://github.com/samuelcolvin/pydantic/issues/756
+*** https://typer.tiangolo.com/
+*** Making something more abstract makes it more precise
+*** https://medium.com/swlh/cool-things-you-can-do-with-pydantic-fc1c948fbde0
+*** No need for OpenApi, ProtoBuf Syntax
+*** Convergence on Python Vs Xml. English vs Esperato. + Execution allows for remote code and reference implementation.
+*** -
+** ---
 ** Concepts Hierarchy -- Terminology And Implementation Hierarch
 *** +
 *** Operations And Remote Operations: invoke, perform -- params, outcome
@@ -437,32 +481,39 @@ sudo dpkg-reconfigure libdvd-pkg
 **** Cmnd-params-applcability: ...
 **** -
 *** ICM: Interactive Command Modules: Collection Of Commands in an executable
+*** SCU: Service Commands Unit: An ICM that is intended to be used as a service
+*** SCMU: Service Commands Multi-Unit: A group of SCUs.
 *** Audited Invoke-Perform Execution of an ICM: AIPX at a given filePath
 **** +
 **** anyIcmp.py --insAsFPs=xxx --par1 -i cmnd arg1
 **** --
-**** aipx_inv --ipxBase=xxx -- anyIcm.py --par1 -i cmnd arg1 # no timeTags. base is ipxBase
-**** aipx_inv --ipxRoot=xxx -- anyIcm.py --par1 -i cmnd arg1 # creates a timeTag and passes timeTag as insAsFPs
+**** aipx_icm --ipxBase=xxx --i invAtBase - anyIcm.py --par1 -i cmnd arg1 # no timeTags. base is ipxBase
+**** aipx_icm --ipxRoot=xxx -- anyIcm.py --par1 -i cmnd arg1 # creates a timeTag and passes timeTag as insAsFPs
 **** --
-**** aipx_perf --ipxBase=xxx # Gethers everything as fileParams.
-**** aipx_perf --ipxRoot=xxx # uses timeTags
+**** aipx_icm --ipxBase=xxx -i perfAtBase # Gethers everything as fileParams.
+**** aipx_icm --ipxRoot=xxx -i perf # uses timeTags
 **** -
 *** Local Invoke-Perform Commands Services: LIPCS at a given Op Svc Multi-Unit AP (osmuAp)
 **** +
-**** osmuAp = Operations Service Multi-Unit Access Point
-**** osmuAp maps to a git-repo (or a Bpo-Repo)
-**** osmuAp has at its root: ./invs (invokations) ./state (for REST) ./files (root of FileSys) osmuSpec
+**** Audit trail, plus equivalent of gipcs
+**** The difference between ipxBase and csmuAp is that ipxBase can be any path but csmuAp is pre-built
+**** scmuAp = Service Commands Multi-Unit Access Point
+**** scmuAp maps to a git-repo (or a Bpo-Repo)
+**** scmuAp has at its root: ./invs (invokations) ./state (for REST) ./files (root of FileSys) osmuSpec
 **** --
 **** lipcs_manage.py --bpoId=bpo --osmuAp=name -i create # creates osmupAP repos.
-**** lipcs_manage.py --osmuApPath=path -i create # creates osmupAP repos.
+**** lipcs_manage.py --csmuApPath=path -i create # creates osmupAP repos.
 **** --
-**** lipcs_manage.py --osmuApPath=path -i inv -- anyOsmuIcm --par1 -i cmnd1 arg1
-**** lipcs_manage.py --osmuApPath=path -i perf # searches in ./invs/
+**** lipcs_manage.py --csmuApPath=path -i inv -- anyOsmuIcm --par1 -i cmnd1 arg1
+**** lipcs_manage.py --csmuApPath=path -i perf # searches in ./invs/
 **** -
-*** Remote Invoke-Perform Commands Services: RIPCS at a given Remote Op Svc Multi-Unit AP (rosmuAp)
+*** Remote Git-Shell Invoke-Perform Commands Services: GIPCS at a given Remote Op Svc Multi-Unit AP (rosmuAp)
 **** +
+**** GIPCS-AU are git-shell accounts on containers through which git actions are executed
 **** rosmuAp = Remote Operations Service Multi-Unit Access Point
 **** rosmuAp maps to a git-shell-repo
+**** rosmuApAddress: consits of cntnrId+GIPCS-AuthUnit+invokerPubKey+rosmu-instance
+**** rosmuApAddress are created as repos within git-shell accounts
 **** rosmuAp has at its root: ./apAddr / ./invs  ./state ./files rosmuSpec
 **** --
 **** gipcs_manage.py --perfAddr=act@srvr --rosmuAp=name -i create # creates osmupAP repos.
@@ -472,7 +523,46 @@ sudo dpkg-reconfigure libdvd-pkg
 **** -
 *** -
 ** B|
-
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "GIPCS Authentication Units (GIPCS-AU)" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *GIPCS Authentication Units:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** GIPCS-AU are git-shell accounts on containers.
+** They are created on svcProvCntnrs to isolate invokations
+** -
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "BISOS-OAuth -- Open Authorization" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *BISOS OAuth -- Open Authorization:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** Built on OAuth2.
+** https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2
+**####+BEGIN: blee:panel:file:text/intro :outLevel 2 :sep t :folding t :fileName "./oauth2_abstract_flow.png" :comment "IMG:"  :afterComment "PNG"
+** /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /nil/ :: [[elisp:(find-file "./oauth2_abstract_flow.png")][./oauth2_abstract_flow.png]] || [[elisp:(find-file-other-window "/bisos/git/auth/bxRepos/blee-binders/bisos-dev/_nodeBase_/oauth2_abstract_flow.png")][Visit In Other]] *|*  =IMG:= *|*  PNG [[elisp:(org-shifttab)][<)]] E|
+   ####+END:
+** Refering to ./oauth2_abstract_flow.png  [[elisp:(find-file-other-window "/bisos/git/auth/bxRepos/blee-binders/bisos-dev/_nodeBase_/oauth2_abstract_flow.png")][Visit In Other]] :
+** User (Resource Owner): Maps to BxRealEntity. And An Authorization Email.
+** Authorization Server: Each BxRealEntity runs her own authorization server delivering Access Tokens.
+** Resource Server: Maps to a CntnrBpo. Each Bpo refers to its own BxRealEntity.
+** Application (Client): Maps to a GIPCS-Invoker.
+** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Addition Of pub-keys using BISOS-Oauth" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Addition Of pub-keys using BISOS-Oauth:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** Limited access to a Granting-CntnrBpo is accomplished by adding the public-key of a Requesting-bpo.
+** For this to happen, the BxRealEntity should authorize it and the following steps occur:
+** 0) Granting-CntnrBpo (As A Resource Server) runs a GIPCS-pub-key-addition-Performer
+** 1) Requesting-bpo send an email to BxRealEntity as Authorization Request for pub-key addition
+** 2) BxRealEntity responds with AuthorizationGrant Email, notifies its Auth-Server
+** 3) Requesting-bpo Presents AuthorizationGrant to BxRealEntity Auth-Server
+** 4) BxRealEntity Auth-Server provides an Access-Token to Requesting-bpo
+** 5) Requesting-bpo provoides Access-Token and pub-key to Granting-CntnrBpo
+** 6) Granting-CntnrBpo adds the public key.
+** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Virtualization" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Virtualization:* |]]    [[elisp:(org-shifttab)][<)]] E|
