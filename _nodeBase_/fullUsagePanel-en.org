@@ -44,7 +44,20 @@
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Overview:* |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
-** constraints liberate liberties constrain
+** Mohammad-Javad Larijani
+** ----
+** به سویِ یک محیط زیست رقمی کامل و جامع
+** در چهار چوبِ حلال وجودیت و با هم زندگانی
+** بر پایه:
+** The Libre-Halaal ByStar Digital Ecosystem
+** و:
+** BISOS: ByStar Internet Services Operating System
+** و:
+** Blee: Bystar Libre-Halaal Emacs usage Environment
+** ----
+** constraints liberate liberties constrain -- https://www.youtube.com/watch?v=GqmsQeSzMdw
+** Constraints Liberate, Liberties Implode
+**
 ** Development Agenda and plans.
 ** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Scheduled Next Steps" :anchor "" :extraInfo ""
@@ -420,20 +433,71 @@ sudo dpkg-reconfigure libdvd-pkg
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Typed-Python Invoke-Perform Commands Services (IPCS):* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
+** Prior Art: click, typer, cyto, argparse, click, docopt, fire, typer, plumbum, and cleo.
+*** +
+*** https://github.com/sbtinstruments/cyto/blob/master/cyto/settings/sources/cli/_cli.py
+*** https://github.com/sbtinstruments/cyto/blob/master/tests/settings/sources/test_source_cli.py
+*** https://pypi.org/project/cyto/
+*** -
+** Related Tools:
+*** +
+*** pydantic
+*** fabric, subProc
+*** -
+** CLI-Options vs Op/Cmnd-Parameters -- Pydantic, Field, Schema -- use description
+on field, same as schema does now.
+** https://github.com/samuelcolvin/pydantic/issues/756
 ** IPCS is a collection of IPCMs
 ** IPCMs are next generation ICMs
 ** IPCM's performer() method replaces ICM's cmnd()
 ** IPCM's have an opSignature which defines the signature of performer()
 ** opSignature includes: cmndParamsMandatory = [ ] cmndParamsOptional = [ ] cmndArgsLen = {'Min': 1, 'Max': 9999,}
+** CmndSignature and performerSignature should be consistent. CmndSignature is richer.
+** https://stackoverflow.com/questions/2677185/how-can-i-read-a-functions-signature-including-default-argument-values
 ** To that we need to add: cmndStdIn, cmndArgsSpec, cmndOutcome, endOfParamsMarker?
 ** Each performer() has a invoker=[cli, py, op, performer,] -- currently cmnd(interactive=False,
-** invoker= replaces asFunc and interactive
+** invoker= replaces asFunc= and interactive=
+** SubClassing Cmnd involves defining opSignature, argsSpecs, and performer()
+** All front end bx:icm:python:cmnd:classHead, be replaced with a single validate() later as @deco
+** Above replacement. We use cmnd(** kwargs), which does the @validate.
+** csBase=invPerfPath -- invForm='fps' perfForm='fps'
+** All front end bx:icm:python:cmnd:classHead, will get a @outcomeRecorder(form='fps')
+This will use self.inArgs=perfOuts  -- incontrast to invIns
+We then get outcome and write it at perfOuts.
+
+def check_authorization(f):
+    def wrapper(*args):
+        print args[0].url
+        return f(*args)
+    return wrapper
+
+class Client(object):
+    def __init__(self, url):
+        self.url = url
+
+    @check_authorization
+    def get(self):
+        print 'get'
+
+>>> Client('http://www.google.com').get()
+http://www.google.com
+get
+The decorator intercepts the method arguments; the first argument is the instance, so it reads the attribute off of that. You can pass in the attribute name as a string to the decorator and use getattr if you don't want to hardcode the attribute name:
+
+def check_authorization(attribute):
+    def _check_authorization(f):
+        def wrapper(self, *args):
+            print getattr(self, attribute)
+            return f(self, *args)
+        return wrapper
+    return _check_authorization
 ** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Git-Shell Typed-Python Invoke-Perform Commands Services (GIPCS)" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Git-Shell Typed-Python Invoke-Perform Commands Services (GIPCS):* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
+** Other Sub-Title: A Framework For Uniting Command-Lines And Web-Services
 ** Sub-Title: Based On Expectations Complete Typed-Python Operations Specifications
 ** SubSub-Title: A Replacement For The Flawed Web Services Model
 ** ---
@@ -547,6 +611,9 @@ and Security Engineers to collaborate towards standardizition
 ** Authorization Server: Each BxRealEntity runs her own authorization server delivering Access Tokens.
 ** Resource Server: Maps to a CntnrBpo. Each Bpo refers to its own BxRealEntity.
 ** Application (Client): Maps to a GIPCS-Invoker.
+** Use Django -- It apears more mature for oauth in 2022
+** https://django-oauth-toolkit.readthedocs.io/en/latest/getting_started.html#what-we-will-build
+** https://oauthlib.readthedocs.io/en/latest/oauth2/server.html#protect-your-apis-using-scopes
 ** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Addition Of pub-keys using BISOS-Oauth" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
