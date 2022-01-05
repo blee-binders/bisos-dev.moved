@@ -1,9 +1,9 @@
 * B|
 ####+BEGIN: bxPanel:common/title-plus
-#+title: panels/bisos-dev
+#+title: blee-binders/bisos-dev
 #+roam_tags: branch
-#+roam_key: bisos/panels/bisos-dev
-[[roam:bisos/panels]]
+#+roam_key: bxRepos/blee-binders/bisos-dev
+[[roam:bxRepos/blee-binders]]
 ####+END
 # kind of begin
 #+title: BISOS Dev
@@ -15,30 +15,30 @@
 
 ####+BEGIN: blee:bxPanel:topPanelControls
 *  [[elisp:(org-cycle)][|#Control|]] :: [[elisp:(blee:bnsm:menu-back)][Back]] [[elisp:(toggle-read-only)][read/wr]] | [[elisp:(show-all)][Show-All]]  [[elisp:(org-shifttab)][Overview]]  [[elisp:(progn (org-shifttab) (org-content))][Content]] | [[elisp:(delete-other-windows)][(1)]] | [[elisp:(progn (save-buffer) (kill-buffer))][S&Q]] [[elisp:(save-buffer)][Save]] [[elisp:(kill-buffer)][Quit]] [[elisp:(bury-buffer)][Bury]]  [[elisp:(magit)][Magit]]  [[elisp:(org-cycle)][| ]]
+**  [[elisp:(bap:magit:bisos:current-bpo-repos/visit)][BPO-Repos-Magit]] ||
 **  [[elisp:(blee:buf:re-major-mode)][Re-Major-Mode]] ||  [[elisp:(org-dblock-update-buffer-bx)][Update Buf Dblocks]] || [[elisp:(org-dblock-bx-blank-buffer)][Blank Buf Dblocks]] || [[elisp:(bx:panel:variablesShow)][bx:panel:variablesShow]]
-**  [[elisp:(blee:menu-sel:comeega:maintenance:popupMenu)][||Maintenance]] 
-**  This File :: *= /bisos/panels/bisos-dev/_nodeBase_/fullUsagePanel-en.org =* 
+**  [[elisp:(blee:menu-sel:comeega:maintenance:popupMenu)][||Maintenance]]
+**  This File :: *= /bisos/git/auth/bxRepos/blee-binders/bisos-dev/_nodeBase_/fullUsagePanel-en.org =*
 *  [[elisp:(org-cycle)][|#Select|]]  :: (Results: [[elisp:(blee:bnsm:results-here)][Here]] | [[elisp:(blee:bnsm:results-split-below)][Below]] | [[elisp:(blee:bnsm:results-split-right)][Right]] | [[elisp:(blee:bnsm:results-other)][Other]] | [[elisp:(blee:bnsm:results-popup)][Popup]]) (Select:  [[elisp:(lsip-local-run-command "lpCurrentsAdmin.sh -i currentsGetThenShow")][Show Currents]]  [[elisp:(lsip-local-run-command "lpCurrentsAdmin.sh")][lpCurrentsAdmin.sh]] ) [[elisp:(org-cycle)][| ]]
 **  #See:  (Window: [[elisp:(blee:bnsm:results-window-show)][?]] | [[elisp:(blee:bnsm:results-window-set 0)][0]] | [[elisp:(blee:bnsm:results-window-set 1)][1]] | [[elisp:(blee:bnsm:results-window-set 2)][2]] | [[elisp:(blee:bnsm:results-window-set 3)][3]] ) || [[elisp:(lsip-local-run-command-here "echo pushd dest")][echo pushd dir]] || [[elisp:(lsip-local-run-command-here "lsf")][lsf]] || [[elisp:(lsip-local-run-command-here "pwd")][pwd]] |
 **  [[elisp:(org-cycle)][|#Destinations|]] :: [[Evolution]] | [[Maintainers]]  [[elisp:(org-cycle)][| ]]
 **  #See:  [[elisp:(bx:bnsm:top:panel-blee)][Blee]] | [[elisp:(bx:bnsm:top:panel-listOfDocs)][All Docs]]  E|
 ####+END
 ####+BEGIN: blee:bxPanel:title :panelType "=bxPanel=" :title "auto"
-* [[elisp:(show-all)][(>]] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
-*   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseTop-50.png][http://www.freeprotocols.org]]_ _   ~Node:: bisos/panels -- bisos-dev~   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseBottom-50.png][http://www.by-star.net]]
+* [[elisp:(show-all)][(>]] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseTop-50.png][http://www.freeprotocols.org]]_ _   ~Node:: bxRepos/blee-binders -- bisos-dev~   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseBottom-50.png][http://www.by-star.net]]
 * ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ####+BEGIN: blee:bxPanel:terseTreeNavigator :panelsList "bxPanel"
 * [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:terseTreeNavigator)][dbf]]
 * [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_   General Panels ::   [[img-link:file:/bisos/blee/env/images/bystarInside.jpg][http://www.by-star.net]] *|*  [[elisp:(find-file "/libre/ByStar/InitialTemplates/activeDocs/listOfDocs/fullUsagePanel-en.org")][BxDE Top Panel]] *|* [[elisp:(blee:bnsm:panel-goto "/libre/ByStar/InitialTemplates/activeDocs/planning/Main")][ByStar Planning]]
 
-*   =Decedents=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-dev/bashDev/_nodeBase_")][ =bashDev= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-dev/developmentRoadmap/_nodeBase_")][ =developmentRoadmap= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-dev/howToBecomeDeveloper")][howToBecomeDeveloper]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-dev/pythonDev/_nodeBase_")][ =pythonDev= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-dev/webServicesDev/_nodeBase_")][ =webServicesDev= ]] *|* 
-*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/_nodeBase_")][ =bisos-apps= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-core/_nodeBase_")][ =bisos-core= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-dev/_nodeBase_")][ =bisos-dev= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-model/_nodeBase_")][ =bisos-model= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-periphery/_nodeBase_")][ =bisos-periphery= ]] *|* 
-*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-svcs/_nodeBase_")][ =bisos-svcs= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/blee-core/_nodeBase_")][ =blee-core= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/blee-dev/_nodeBase_")][ =blee-dev= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/blee-model/_nodeBase_")][ =blee-model= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bxde-core/_nodeBase_")][ =bxde-core= ]] *|* 
-*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bxde-dev/_nodeBase_")][ =bxde-dev= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bxde-model/_nodeBase_")][ =bxde-model= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/connectivity/_nodeBase_")][ =connectivity= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/desktop/_nodeBase_")][ =desktop= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/espoused/_nodeBase_")][ =espoused= ]] *|* 
-*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/non-libre-halaal/_nodeBase_")][ =non-libre-halaal= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/overview")][overview]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/panelsRoot")][panelsRoot]] *|* 
-*   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/_nodeBase_")][ =panels= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos")][bisos]] *|* 
-*                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_                          [[elisp:(org-shifttab)][<)]] E|
+*   =Decedents=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-dev/bashDev/_nodeBase_")][ =bashDev= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-dev/developmentRoadmap/_nodeBase_")][ =developmentRoadmap= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-dev/howToBecomeDeveloper")][howToBecomeDeveloper]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-dev/pythonDev/_nodeBase_")][ =pythonDev= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-dev/webServicesDev/_nodeBase_")][ =webServicesDev= ]] *|*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/_nodeBase_")][ =bisos-apps= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-core/_nodeBase_")][ =bisos-core= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-dev/_nodeBase_")][ =bisos-dev= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-model/_nodeBase_")][ =bisos-model= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-periphery/_nodeBase_")][ =bisos-periphery= ]] *|*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-svcs/_nodeBase_")][ =bisos-svcs= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/blee-core/_nodeBase_")][ =blee-core= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/blee-dev/_nodeBase_")][ =blee-dev= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/blee-model/_nodeBase_")][ =blee-model= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bxde-core/_nodeBase_")][ =bxde-core= ]] *|*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bxde-dev/_nodeBase_")][ =bxde-dev= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bxde-model/_nodeBase_")][ =bxde-model= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/_nodeBase_")][ =connectivity= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/desktop/_nodeBase_")][ =desktop= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/espoused/_nodeBase_")][ =espoused= ]] *|*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/non-libre-halaal/_nodeBase_")][ =non-libre-halaal= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/overview")][overview]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/panelsRoot")][panelsRoot]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/system-container/_nodeBase_")][ =system-container= ]] *|*
+*   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/_nodeBase_")][ =blee-binders= ]] *|*
 ####+END
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Overview" :anchor "Panel"
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Overview:* |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
@@ -55,6 +55,19 @@
 ** و:
 ** Blee: Bystar Libre-Halaal Emacs usage Environment
 ** ----
+** ----
+** Towards A Complete, Individual Oriented Digital Ecosystem
+** In The Libre-Halaal And Convivial Quadrant
+** Based On:
+** The Libre-Halaal ByStar Digital Ecosystem
+** A Unified and Non-Proprietary Model For Autonomous Internet Services
+** And Inter-Autonomous Social Relations
+** And:
+** BISOS: ByStar Internet Services Operating System
+** And:
+** Blee: Bystar Libre-Halaal Emacs Usage Environment
+** ----
+
 ** constraints liberate liberties constrain -- https://www.youtube.com/watch?v=GqmsQeSzMdw
 ** Constraints Liberate, Liberties Implode
 **
@@ -90,7 +103,7 @@ with instance. du_jekyll/sites/main needs to be parametrized in siJekyll.
 ** TODO
 ** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Current Development Context" :anchor "" :extraInfo ""
-* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Current Development Context:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** -
@@ -357,7 +370,7 @@ _docStringEnd_
 ** TODO Run bx-gitRepos -i cachedLsRefresh -- During bootstrap
 ** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "New Planned Features" :anchor "" :extraInfo ""
-* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *New Planned Features:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
@@ -384,42 +397,23 @@ u'16.00 GB'
 *** Look into emacs server selection as a daemon -- https://www.emacswiki.org/emacs/MultiEmacsServer
 *** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Python BISOS/Blee Transition" :anchor "" :extraInfo ""
-** TODO Mailings -- Mail Sending -- Update/Complete In Combination with LCNT Commega
-*** 
-*** Revisit /bisos/panels/blee-core/mail/sending/_nodeBase_/fullUsagePanel-en.org
-*** Revisit: Extended By: /bxo/r3/iso/piu_mbFullUsage/realmPanels/blee-core/mail/sending/_nodeBase_/general.org
-*** TODO Include realmPanels/blee-core/mail/sending/_nodeBase_/general.org in piu_mbFullUsage/mailSending
-*** Have "Mailings" be disributed but "Mail Sending" be distriuted -- Using same tools
-*** 
-** TODO DVD Watching And Kodi
-sudo apt-get install libavcodec58
-sudo apt install libdvdnav4 libdvdread7 gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly libdvd-pkg
-sudo apt-get install             ffmpeg
-sudo apt-get install regionset
-sudo regionset # 1
-sudo add-apt-repository multiverse
-sudo apt install libdvd-pkg
-sudo dpkg-reconfigure libdvd-pkg
-sudo dpkg-reconfigure libdvd-pkg
-   SCHEDULED: <2020-09-13 Sun>
-** 
-* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Python BISOS/Blee Transition:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :sep t :title "Python 2.7 to 3.X Transition" :anchor "" :extraInfo ""
-** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 ** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /Python 2.7 to 3.X Transition:/ |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :sep t :title "Blee Python" :anchor "" :extraInfo ""
-** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 ** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /Blee Python:/ |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 *** 
 *** DONE Snippets -- VirtEnv Activation/Deactivations
 *** 
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :sep t :title "PyPiProc and BISOS Python Infra" :anchor "" :extraInfo ""
-** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 ** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /PyPiProc and BISOS Python Infra:/ |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 *** 
@@ -433,6 +427,7 @@ sudo dpkg-reconfigure libdvd-pkg
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Typed-Python Invoke-Perform Commands Services (IPCS):* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
+** For documentation use facterIcm.py as example for everything.
 ** Prior Art: click, typer, cyto, argparse, click, docopt, fire, typer, plumbum, and cleo.
 *** +
 *** https://github.com/sbtinstruments/cyto/blob/master/cyto/settings/sources/cli/_cli.py
@@ -589,7 +584,7 @@ and Security Engineers to collaborate towards standardizition
 ** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "GIPCS Authentication Units (GIPCS-AU)" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *GIPCS Authentication Units:* |]]    [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *GIPCS Authentication Units (GIPCS-AU):* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
 ** GIPCS-AU are git-shell accounts on containers.
@@ -597,7 +592,7 @@ and Security Engineers to collaborate towards standardizition
 ** -
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "BISOS-OAuth -- Open Authorization" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *BISOS OAuth -- Open Authorization:* |]]    [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *BISOS-OAuth -- Open Authorization:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
 ** Built on OAuth2.
@@ -631,7 +626,7 @@ and Security Engineers to collaborate towards standardizition
 ** 6) Granting-CntnrBpo adds the public key.
 ** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Virtualization" :anchor "" :extraInfo ""
-* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Virtualization:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** 
@@ -645,7 +640,7 @@ them. Please see your Linux system's documentation for more information.
 **
 ** 
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Storage" :anchor "" :extraInfo ""
-* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Storage:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:bxPanel:linkWithTreeElem :model "auto" :sep t :outLevel 2 :agenda t :foldDesc "auto" :destDesc "auto" :dest "/bisos/panels/bisos-core/bootstrap/_nodeBase_/"
@@ -679,13 +674,13 @@ them. Please see your Linux system's documentation for more information.
 *** TODO Some Idea
 ####+BEGIN: blee:bxPanel:evolutionMaintainers
 ** [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:evolutionMaintainers)][dbf]]
-** [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /Bug Reports, Development Team:/ | ]]  <<Maintainers>>  
+** [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /Bug Reports, Development Team:/ | ]]  <<Maintainers>>
 ***  Problem Report                       ::   [[elisp:(find-file "")][Send debbug Email]]
 ***  Maintainers                          ::   [[bbdb:Mohsen.*Banan]]  :: http://mohsen.1.banan.byname.net  E|
 ####+END
 * B|
 ####+BEGIN: blee:bxPanel:footerPanelControls
-* [[elisp:(show-all)][(>]] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+* [[elisp:(show-all)][(>]] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 * /Footer Controls/ ::  [[elisp:(blee:bnsm:menu-back)][Back]]  [[elisp:(toggle-read-only)][toggle-read-only]]  [[elisp:(show-all)][Show-All]]  [[elisp:(org-shifttab)][Cycle Glob Vis]]  [[elisp:(delete-other-windows)][1 Win]]  [[elisp:(save-buffer)][Save]]   [[elisp:(kill-buffer)][Quit]]  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:bxPanel:footerOrgParams
