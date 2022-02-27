@@ -107,6 +107,7 @@ with instance. du_jekyll/sites/main needs to be parametrized in siJekyll.
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Current Development Context:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** -
+** TODO Capture mkv2mp4 and rest from persoArabic
 ** fpi -- stand for File-based Performers And Invokers Model
 ** fpiPerfIcmAt icmName /baseDir/name
 ** fpiInvIcmAt icmName /baseDir/name  -- params and command and args
