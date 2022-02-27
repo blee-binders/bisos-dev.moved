@@ -196,11 +196,13 @@ if bpf.OpSubProc(outcome=cmndOutcome, cwd=someDirBase, log=1).bash(
 ** Experiment with specific on top of generic in -- sysCharGuestMaterialize.sh
 ** 
 ** B|
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Problems And Next Steps" :anchor "" :extraInfo ""
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "TODOs, Problems And Next Steps" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Problems And Next Steps:* |]]    [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *TODOs, Problems And Next Steps:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** -
+** TODO  to ####+BEGIN: blee:bxPanel:linkWithTreeElem  add :folding? nil
+** TODO Add This: realmRun -p realm=usg  bisosBaseDirs-niche.sh -n showRun -v -h -i sysSetup
 ** TODO [#B] Start BISOS Py Framework (bpf) as a module. logging, tracing.
 ** TODO  Locate all dangling symlinks with find -L
 *** locate find -L  /bisos /de /bxo  -print | grep -i "someThingThatShouldNotExist"
