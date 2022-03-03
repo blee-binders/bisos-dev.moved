@@ -200,6 +200,7 @@ if bpf.OpSubProc(outcome=cmndOutcome, cwd=someDirBase, log=1).bash(
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Problems And Next Steps:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** -
+** TODO keepassxc bins prep is missing.
 ** TODO [#B] Start BISOS Py Framework (bpf) as a module. logging, tracing.
 ** TODO  Locate all dangling symlinks with find -L
 *** locate find -L  /bisos /de /bxo  -print | grep -i "someThingThatShouldNotExist"
