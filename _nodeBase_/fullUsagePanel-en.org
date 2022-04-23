@@ -200,7 +200,8 @@ if bpf.OpSubProc(outcome=cmndOutcome, cwd=someDirBase, log=1).bash(
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *TODOs, Problems And Next Steps:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
-** -
+** +
+** TODO Capture  https://en.wikipedia.org/wiki/Comparison_of_mail_servers for BISOS-Mail.
 ** TODO keepassxc bins prep is missing.
 ** TODO  to ####+BEGIN: blee:bxPanel:linkWithTreeElem  add :folding? nil
 ** TODO Add This: realmRun -p realm=usg  bisosBaseDirs-niche.sh -n showRun -v -h -i sysSetup
