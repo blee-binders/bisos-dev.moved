@@ -78,6 +78,8 @@
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Scheduled Next Steps:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
+** TODO /bisos/venv/py3/dev-bisos3/bin/pip install google-api-python-client 
+** TODO /bisos/venv/py3/dev-bisos3/bin/pip install google-auth-oauthlib
 ** TODO IMPORTANT -- Digest https://github.com/larsmagne/make-mta
 ** TODO Arrange for creation of du_jekyll/sites/main/dump in various steps. main gets added
 with instance. du_jekyll/sites/main needs to be parametrized in siJekyll.
@@ -202,6 +204,7 @@ if bpf.OpSubProc(outcome=cmndOutcome, cwd=someDirBase, log=1).bash(
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *TODOs, Problems And Next Steps:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
+** TODO echo 256 | sudo tee /proc/sys/fs/inotify/max_user_instances
 ** TODO For testing Use https://www.mail-tester.com/
 ** TODO Capture  https://en.wikipedia.org/wiki/Comparison_of_mail_servers for BISOS-Mail.
 ** TODO keepassxc bins prep is missing.
