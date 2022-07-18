@@ -78,6 +78,8 @@
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Scheduled Next Steps:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
+** TODO Create a "BISOS Overview" Panel. In there, have a Fundamental Constructs Panels.
+In document start with Unix constructs, Emacs constructs, Org-Mode Constructs, Git Constructs.
 ** TODO /bisos/venv/py3/dev-bisos3/bin/pip install google-api-python-client 
 ** TODO /bisos/venv/py3/dev-bisos3/bin/pip install google-auth-oauthlib
 ** TODO IMPORTANT -- Digest https://github.com/larsmagne/make-mta
@@ -384,6 +386,8 @@ _docStringEnd_
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *New Planned Features:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
+** In BISOS documentation, Introduce BISDF (ByStar Internet Services Development Framework)
+** Replace .ttytex with .mtx  --- Main TeX module.
 ** Use gRPC -- Not OpenAPI, REST, etc.
 ** https://github.com/tomyjwu/python-microsrvices-with-grpc
 ** https://realpython.com/python-microservices-grpc/
