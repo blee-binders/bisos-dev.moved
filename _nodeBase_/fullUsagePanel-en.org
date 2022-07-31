@@ -47,7 +47,7 @@
 ** Mohammad-Javad Larijani
 ** ----
 ** به سویِ یک محیط زیست رقمی کامل و جامع
-** در چهار چوبِ حلال وجودیت و با هم زندگانی
+** در چهار چوبِ حلال وجودیت چند وجودیها و با هم زندگانی
 ** بر پایه:
 ** The Libre-Halaal ByStar Digital Ecosystem
 ** و:
@@ -56,7 +56,7 @@
 ** Blee: Bystar Libre-Halaal Emacs usage Environment
 ** ----
 ** ----
-** Towards A Complete, Individual Oriented Digital Ecosystem
+** Towards A Complete, Individual Edge Oriented Digital Ecosystem
 ** In The Libre-Halaal And Convivial Quadrant
 ** Based On:
 ** The Libre-Halaal ByStar Digital Ecosystem
@@ -73,11 +73,177 @@
 **
 ** Development Agenda and plans.
 ** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Phases, Implementation And Schedules" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Phases, Implementation And Schedules:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+#+caption: Development Table
+| [[Phases]]  | Start Date | Completion | Duration | Status  | Comments                                   |
+|---------+------------+------------+----------+---------+--------------------------------------------|
+| [[Phase-1]] | 2022-07-29 | ---        | 2 wks    | Started | Encrypted File Parameter & Marmee          |
+| [[Phase-2]] | ---        | ---        | 5 wks    | Planned | LCNT Cleanups & Modernization & 120033     |
+| [[Phase-3]] | ---        | ---        | 6 wks    | Planned | CS, GitShROP, Pals, Qmail+Jekyl, CleanBoot |
+| [[Phase-4]] | ---        | ---        | 3 wks    | Planned | Transition mohsen.byname with Old Regs     |
+| [[Phase-5]] | ---        | ---        | 6 wks    | Planned | RO&DomainRegistrars, Batch PALS Creation   |
+| [[Phase-6]] | ---        | ---        | 4 wks    | Planned | Transition of Existing Sites               |
+| [[Phase-7]] | ---        | ---        | 6 wks    | Planned | Django Based Services Creation             |
+| [[Phase-8]] | ---        | ---        | 4 wks    | Planned | Cleanups And Release                       |
+|---------+------------+------------+----------+---------+--------------------------------------------|
+
+ End Of Phase-4                        16 weeks --- 4 months
+ End Of Phase-4                        26 weeks --- 6.5 months
+ End of Phase-8                        38 weeks --- 9.5 months
+
+** +
+** Encrypted File Parameter & Marmee --- <<Phase-1>> --- 2 Weeks Total
+[[Phase-1.1]]   19h
+[[Phase-1.2]]   25h
+[[Phase-1.3]]   37h
+-------------------
+81 Hours
+
+*** File Parameters Design --- IMPORTANT -- <<Phase-1.1>>
+**** +
+**** Key Decisions. We will use Symetric Keys. SymKeys are encrypted with pubKeys. Passwds are in KeePass Vault.
+**** Each fp may have an encryptionType FV. Usually bxSym. fp has an encryptionScope curBpo, site, etc.
+**** Each BPO has a GPG repo. That GPG repo is used as base.
+**** Each BPO has a Vaults repo.
+**** Each BPO has a secrets repo. Which contains the  encrypted symKey.
+**** Keys in GPG repo are created with purpose as index. Their passwords are auto gened and stored in BPO-Vault.
+**** The following inits are assumed. BPO-PGP-Key, BPO-Vault, BPO-Secret FP.
+**** On FP Write, Param is sym-encrypted with decrypted symKey using PGP-repo & vault. scope & type is recorded.
+**** On FP Read, base don scope and type, Param is sym-decrypted with decrypted symKey using PGP-repo & vault.
+**** Implemetation Order:
+***** +
+***** TODO Create a bisos crypt panel
+***** [4h] Build a in bisos.crypt build bx-vault library based on pykeepass-cache.
+***** [4h] Build a bisos.gpg library.
+***** [3h] Create, vault, gpg and secrets repos for a given bpo.
+***** [6h] Revisit bpf.fp library.
+***** [2h] Update FP Panel And Capture new info
+***** -
+**** Totals: 19h
+**** -
+*** Complete MARMEE Transition --- IMPORTANT -- <<Phase-1.2>>
+**** +
+**** Implementation Order:
+***** 1) [4h]Build offlineimaprc based on encFPs.
+Use Encrypted FPs in Marmee's context for Gmail InMail and OutMail context.
+***** 2) [4h] Absorbe gmail oauth in bx, based on FPs.
+***** 3) [3h] Setup qmail as in 1005 --- Cultivate eoqMail (Edge-Oriented QMail)
+***** 4) [4h] Make qmail-remote work right with encrypted FPs --- Absorb send.py
+***** 5) [8h] Transition rest of the old Marme features: Mail Sending and DSN Processing.
+***** 6) [3h] Cleanup and get rid of old marme files.
+***** 7) [3h] Update Marmee Panel And Capture new info
+**** Totals: 25h
+**** -
+*** Bootstrap Self-Contained BISOS  --- IMPORTANT -- <<Phase-1.3>>
+**** +
+**** [2h] Pass everything through git
+**** [3h] Push all pkgs to pypi
+**** [8h] Rebuild and test with production venv
+**** [24h] Rebuild and test in VM.
+**** Totals: 37h
+**** -
+** LCNT Cleanups & Modernization & 120033 --- <<Phase-2>>  --- 5 Weeks Total
+***  LCNT Cleanups And Modernization --- Phase-2.1
+**** +
+**** bisos.io --- io.log  io.eh. io.ann io.tm
+**** bisos.cs --- cs.cmnd cs.exChap
+**** -
+*** TODO Split 120033 into Two --- Phase-2.2
+**** +
+**** bisos.io --- io.log  io.eh. io.ann io.tm
+**** bisos.cs --- cs.cmnd cs.exChap
+**** -
+*** TODO Update Both Documents --- Phase-2.3
+**** +
+**** bisos.io --- io.log  io.eh. io.ann io.tm
+**** bisos.cs --- cs.cmnd cs.exChap
+**** -
+*** TODO Run Docs Through Microsoft Word and Others --- Phase-2.3
+**** +
+**** bisos.io --- io.log  io.eh. io.ann io.tm
+**** bisos.cs --- cs.cmnd cs.exChap
+**** -
+*** TODO Publish Both Documents --- Phase-2.4
+**** +
+**** bisos.io --- io.log  io.eh. io.ann io.tm
+**** bisos.cs --- cs.cmnd cs.exChap
+**** -
+** CS, GitShROP, Pals, Qmail+Jekyl, CleanBoot --- <<Phase-3>>  --- 6 Weeks Total
+*** TODO Transition From ICM To CS --- Phase-3.1  --- 5 Weeks Total
+**** +
+**** bisos.io --- io.log  io.eh. io.ann io.tm
+**** bisos.cs --- cs.cmnd cs.exChap
+**** -
+*** TODO Complete GitSh Remote Operations --- Phase-3.2
+*** +
+*** A Starting Point Panel
+*** -
+*** TODO Test Out A Registrar service --- Phase-3.2.1
+**** +
+**** With Object-Ids
+**** -
+*** TODO Complete Pals Base Implementation  --- Phase-3.3
+**** +
+**** A Starting Point Panel
+**** -
+*** TODO Use Pals To Implement Jekyl  --- Phase-3.4
+**** +
+**** Introduce concept of Self-Contained-BPOs
+**** -
+*** TODO Use Pals To Implement Geneweb  --- Phase-3.4
+**** +
+**** Introduce concept of Self-Contained-BPOs
+**** -
+*** TODO Use Pals To Implement qmail  --- Phase-3.5
+**** +
+**** Introduce concept of Self-Contained-BPOs
+**** -
+*** TODO Release Phase 3  --- Phase-3.6
+**** +
+**** Introduce concept of Self-Contained-BPOs
+**** -
+** Transition mohsen.byname with Old Registrars  --- <<Phase-4>>  --- 3 Weeks Total
+*** TODO Rebuild Exisiting Physical And VM  --- Phase-4.1
+**** +
+**** Rebuild Physical and VMs based on existing
+**** -
+*** TODO mohsen.byname Transition Based on Exisiting  --- Phase-4.2
+**** +
+**** Rebuild Physical and VMs based on existing
+**** -
+** RO&DomainRegistrars, Batch PALS Creation  --- <<Phase-5>> 6 Weeks Total
+*** TODO Re-Visit Site Bootstrap  --- Phase-5.1
+**** +
+**** Rebuild Physical and VMs based on existing
+**** -
+***** TODO Re-Create All Registrations Based on Services  --- Phase-5.2
+**** +
+**** Rebuild Physical and VMs based on existing
+**** -
+*** TODO Update And Re-Implement BPO Creation --- Phase-5.3
+**** +
+**** Rebuild Physical and VMs based on existing
+**** -
+*** TODO Create Domain Registrars --- Phase-5.4
+**** +
+**** Rebuild Physical and VMs based on existing
+**** -
+*** TODO Batch Pals Creation --- Phase-5.4
+**** +
+**** Rebuild Physical and VMs based on existing
+**** -
+** Transition of Existing Sites --- <<Phase-6>> 4 Weeks
+*** +
+*** Rebuild Physical and VMs based on existing
+*** -
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Scheduled Next Steps" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Scheduled Next Steps:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
-** +
+** TODO Evaluate pykeepass and pykeepass-cache   --- gpg --gen-random --armor 1 14
 ** TODO Create a "BISOS Overview" Panel. In there, have a Fundamental Constructs Panels.
 In document start with Unix constructs, Emacs constructs, Org-Mode Constructs, Git Constructs.
 ** TODO /bisos/venv/py3/dev-bisos3/bin/pip install google-api-python-client 
