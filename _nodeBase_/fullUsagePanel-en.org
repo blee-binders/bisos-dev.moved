@@ -39,6 +39,7 @@
 *   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bxde-dev/_nodeBase_")][ =bxde-dev= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bxde-model/_nodeBase_")][ =bxde-model= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/_nodeBase_")][ =connectivity= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/desktop/_nodeBase_")][ =desktop= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/espoused/_nodeBase_")][ =espoused= ]] *|*
 *   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/non-libre-halaal/_nodeBase_")][ =non-libre-halaal= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/overview")][overview]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/panelsRoot")][panelsRoot]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/system-container/_nodeBase_")][ =system-container= ]] *|*
 *   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/_nodeBase_")][ =blee-binders= ]] *|*
+*                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_                          [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Overview" :anchor "Panel"
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Overview:* |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
@@ -145,7 +146,55 @@ Use Encrypted FPs in Marmee's context for Gmail InMail and OutMail context.
 **** [24h] Rebuild and test in VM.
 **** Totals: 37h
 **** -
-** LCNT Cleanups & Modernization & 120033 --- <<Phase-2>>  --- 5 Weeks Total
+** CS Library Transition
+*** Document The Design In Panel
+***  Module Restructuring and cleanups.
+**** +
+**** DONE Redo and cleanup examples.py <2022-08-21 Sun 22:35>
+**** DONE Remove examples from cs.py <2022-08-21 Sun 22:35>
+**** In cs.py global fix all ucf refs and all TM, EH, LOG
+**** Cleanup io and and bpf
+**** WAITING End to end test with new examples
+**** DONE Redo and cleanup inCmnd.py
+**** DONE Remove in-cmnds from cs.py
+**** WAITING End to end test with new inCmnd.py
+**** TODO Redo and cleanup runArgs.py
+**** TODO Remove runArgs from cs.py
+**** WAITING End to end test with new runArgs.py
+**** DONE Redo and cleanup param.py
+**** DONE Remove param.py from cs.py
+**** WAITING End to end test with new param.py
+**** DONE Redo and cleanup arg.py
+**** DONE Remove arg.py from cs.py
+**** WAITING End to end test with new arg.py
+**** Cleanup the remaining cs.py
+**** TODO Absorb gitShRemOp in rem.py
+**** WAITING Absorb aipx.cs in cs/bin
+**** Re-visit logging in io
+**** Cleanup all of io
+**** Cleanup all of bpf
+**** Re-do dblocks
+**** Build mass transitioner convertIcmToCs.sh
+**** -
+*** -
+***  Addition of RPyC Invoker/Performer
+**** +
+**** Revisit work done with gitSh as transport
+**** Live with a simple RPyC Performer for now
+**** Add invoker feature to cmnd dispatch
+**** Revisit cs.Cmnd for remote invocation programtically and from cmndLine.
+**** -
+***  Testing And Examples
+**** +
+**** Create test examples for various features
+**** -
+***  Mass transition to new CS
+**** +
+**** Convert all of Marmee to new CS
+**** Continue with File Parameters
+**** -
+*** LCNT Cleanups & Modernization & 120033 --- <<Phase-2>>  --- 5 Weeks Total
+
 ***  LCNT Cleanups And Modernization --- Phase-2.1
 **** +
 **** bisos.io --- io.log  io.eh. io.ann io.tm
@@ -244,6 +293,9 @@ Use Encrypted FPs in Marmee's context for Gmail InMail and OutMail context.
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Scheduled Next Steps:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** TODO Evaluate pykeepass and pykeepass-cache   --- gpg --gen-random --armor 1 14
+** TODO Buy into RPyC In a big way.
+*** https://programtalk.com/python-examples/rpyc.utils.factory.ssl_connect/
+*** https://docs.python.org/3/library/ssl.html
 ** TODO Create a "BISOS Overview" Panel. In there, have a Fundamental Constructs Panels.
 In document start with Unix constructs, Emacs constructs, Org-Mode Constructs, Git Constructs.
 ** TODO /bisos/venv/py3/dev-bisos3/bin/pip install google-api-python-client 
