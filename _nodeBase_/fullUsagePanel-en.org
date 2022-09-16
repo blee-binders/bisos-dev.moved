@@ -57,7 +57,7 @@
 ** Blee: Bystar Libre-Halaal Emacs usage Environment
 ** ----
 ** ----
-** Towards A Complete, Individual Edge Oriented Digital Ecosystem
+** Towards A Complete, Individualized Edge Oriented Digital Ecosystem
 ** In The Libre-Halaal And Convivial Quadrant
 ** Based On:
 ** The Libre-Halaal ByStar Digital Ecosystem
@@ -96,6 +96,47 @@
  End of Phase-8                        38 weeks --- 9.5 months
 
 ** +
+** Next Steps
+*** +
+*** Complete ro_fps in ro.py csRos-manage.cs
+*** Add menu to fpCls as cmnd
+*** Add :ro t to classHead --- Sets up rtInvConstraints and adds roSapPath as pyInv.
+*** Test pyInv and pyRoInv
+*** Create new snippets for file segments and new dblocks
+*** Re-visit convertIcmToCs.sh
+*** Cleanup b. b.cs and b.io
+*** ===== P1:: All of above 1 week? =====
+*** Revive encrypted file params with new CS
+*** Revive and complete MARMEE with new CS
+*** ----P2::  All of above 2 weeks? ----
+*** Build roSiteRegistrar.cs
+*** Pass pkgs through git and publish on pypi
+*** Remotely test roSiteRegistrar.cs
+*** PyCS Documentaion
+*** ---- P3:: All of above 1 week? ----
+*** Rebuild from scratch pure and VM
+*** Add bso creation to bpo creation in python
+*** Redo site construction
+*** ---- P4:: All of above 2 weeks? ----
+*** Revivie Pals
+*** With PALS redo Qmail and Jekyl
+*** With PALS redo plone
+*** Build new registrars
+*** Site construction with new registrars
+*** ---- P5:: All of above 4.5 weeks? ----
+*** Transition mohsen.byname
+***  ---- P6:: All of above 2 weeks? ----
+*** -------------------------------------------------------
+*** Grand total  1 + 2 + .5 + 2 + 5 + 2  == 12.5  (Dec 31, 2022)
+*** 12033 publication 4 weeks
+*** ----------------------------------------------(Jan 31, 2023)
+*** [[Phase-5]]   6-weeks
+*** [[Phase-6]]   4 Weeks
+*** ----------------------------------------------(April  15, 2023)
+*** [[Phase 7]]  6 weeks
+*** [[Phase 8]]  4 weeks
+*** ---------------------------------------------(July 15, 2023)
+*** -
 ** Encrypted File Parameter & Marmee --- <<Phase-1>> --- 2 Weeks Total
 [[Phase-1.1]]   19h
 [[Phase-1.2]]   25h
@@ -152,37 +193,42 @@ Use Encrypted FPs in Marmee's context for Gmail InMail and OutMail context.
 **** +
 **** DONE Redo and cleanup examples.py <2022-08-21 Sun 22:35>
 **** DONE Remove examples from cs.py <2022-08-21 Sun 22:35>
-**** In cs.py global fix all ucf refs and all TM, EH, LOG
-**** Cleanup io and and bpf
-**** WAITING End to end test with new examples
+**** DONE In cs.py global fix all ucf refs and all TM, EH, LOG
+**** DONE Cleanup io and and bpf
+**** DONE End to end test with new examples
 **** DONE Redo and cleanup inCmnd.py
 **** DONE Remove in-cmnds from cs.py
-**** WAITING End to end test with new inCmnd.py
-**** TODO Redo and cleanup runArgs.py
-**** TODO Remove runArgs from cs.py
-**** WAITING End to end test with new runArgs.py
-**** DONE Redo and cleanup param.py
+**** DONE End to end test with new inCmnd.py
+**** DONE Redo and cleanup runArgs.py
+**** DONE Remove runArgs from cs.py
+**** DONE End to end test with new runArgs.py
+**** TODO Redo and cleanup param.py
 **** DONE Remove param.py from cs.py
-**** WAITING End to end test with new param.py
-**** DONE Redo and cleanup arg.py
+**** WAITING End to end test with new param.py   ~NEXT~
+**** TODO Redo and cleanup arg.py   ~NEXT~
 **** DONE Remove arg.py from cs.py
 **** WAITING End to end test with new arg.py
 **** Cleanup the remaining cs.py
 **** TODO Absorb gitShRemOp in rem.py
 **** WAITING Absorb aipx.cs in cs/bin
-**** Re-visit logging in io
-**** Cleanup all of io
+
+**** WAITING Re-visit logging in io
+**** DONE Cleanup all of io
 **** Cleanup all of bpf
-**** Re-do dblocks
-**** Build mass transitioner convertIcmToCs.sh
+**** WAITING Re-do dblocks
+**** WAITING Build mass transitioner convertIcmToCs.sh
+**** DONE Automate CS importation with dblock
 **** -
 *** -
 ***  Addition of RPyC Invoker/Performer
 **** +
+**** DONE *TODO In cmnd replace interactive with rtInv ~NEXT~ Urgent
 **** Revisit work done with gitSh as transport
 **** Live with a simple RPyC Performer for now
 **** Add invoker feature to cmnd dispatch
 **** Revisit cs.Cmnd for remote invocation programtically and from cmndLine.
+**** Build csRoManager.cs
+**** Build csAipx.cs
 **** -
 ***  Testing And Examples
 **** +
@@ -604,6 +650,7 @@ _docStringEnd_
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *New Planned Features:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
+** Use Django https://github.com/viewflow/viewflow
 ** In BISOS documentation, Introduce BISDF (ByStar Internet Services Development Framework)
 ** Replace .ttytex with .mtx  --- Main TeX module.
 ** Use gRPC -- Not OpenAPI, REST, etc.
