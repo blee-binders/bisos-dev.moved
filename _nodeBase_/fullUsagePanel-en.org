@@ -98,17 +98,26 @@
 ** +
 ** Next Steps
 *** +
-*** Complete ro_fps in ro.py csRos-manage.cs
-*** Add menu to fpCls as cmnd
-*** Add :ro t to classHead --- Sets up rtInvConstraints and adds roSapPath as pyInv.
-*** Test pyInv and pyRoInv
-*** Create new snippets for file segments and new dblocks
-*** Re-visit convertIcmToCs.sh
+*** --------------  Sept 15, 2022 Start Date ---------------
+*** DONE Complete ro_fps in ro.py csRos-manage.cs
+*** DONE Add menu to fpCls as cmnd
+*** TODO Cleanup ro_fps and fpCls and Fully use FpCsParam and Rename to FpCmndParamBase
+*** DONE Add :ro noCli to classHead --- Sets up rtInvConstraints and adds roSapPath as pyInv.
+*** DONE With :ro "py" provide code for remote inv. Test pyInv and pyRoInv
+*** TODO Take code from examples/roPy_csu.py and include it in dblock :ro py
+*** Create new snippets for file segments and new dblocks --
+*** For cs-mu use csExamples.cs as template -- Identify new needed dblocks (b:py3:cs:file/controls + inMainExpected Symbols)
+*** For cs-u use examples/parsArgsStdinCmndResult_csu.py -- Identify sections
+*** Identify all old dblocks and modernize them
+*** WAITING For templates get to 0 typing warnings -- Done in csExamples.cs not parsArgsStdinCmndResult_csu.py
 *** Cleanup b. b.cs and b.io
-*** ===== P1:: All of above 1 week? =====
+*** Start with b_io, drive it with csExamples.cs
+*** See if we can eliminate ast modules. Use log for file, line
+*** Re-visit convertIcmToCs.sh
+*** ===== P1:: All of above 1 week? =====  Due Sept 22, 2022
 *** Revive encrypted file params with new CS
 *** Revive and complete MARMEE with new CS
-*** ----P2::  All of above 2 weeks? ----
+*** ----P2::  All of above 2 weeks? ---- Due Oct 6, 2022
 *** Build roSiteRegistrar.cs
 *** Pass pkgs through git and publish on pypi
 *** Remotely test roSiteRegistrar.cs
