@@ -105,18 +105,22 @@
 *** DONE Add :ro noCli to classHead --- Sets up rtInvConstraints and adds roSapPath as pyInv.
 *** DONE With :ro "py" provide code for remote inv. Test pyInv and pyRoInv
 *** TODO Take code from examples/roPy_csu.py and include it in dblock :ro py
-*** Create new snippets for file segments and new dblocks --
-*** For cs-mu use csExamples.cs as template -- Identify new needed dblocks (b:py3:cs:file/controls + inMainExpected Symbols)
-*** For cs-u use examples/parsArgsStdinCmndResult_csu.py -- Identify sections
-*** Identify all old dblocks and modernize them
+*** DONE Create new snippets for file segments and new dblocks --
+*** DONE For cs-mu use csExamples.cs as template -- Identify new needed dblocks (b:py3:cs:file/controls + inMainExpected Symbols)
+*** DONE For cs-u use examples/parsArgsStdinCmndResult_csu.py -- Identify sections
+*** DONE Identify all old dblocks and modernize them
 *** WAITING For templates get to 0 typing warnings -- Done in csExamples.cs not parsArgsStdinCmndResult_csu.py
-*** Cleanup b. b.cs and b.io
-*** Start with b_io, drive it with csExamples.cs
-*** See if we can eliminate ast modules. Use log for file, line
-*** Re-visit convertIcmToCs.sh
-*** ===== P1:: All of above 1 week? =====  Due Sept 22, 2022
+*** DONE Cleanup b. b.cs and b_io
+*** DONE Start with b_io, drive it with csExamples.cs
+*** WAITING See if we can eliminate ast modules. Use log for file, line
+*** DONE Re-visit convertIcmToCs.sh
+*** ===== P1:: All of above 1 week? =====  Due Sept 22, 2022 ---Completed Sept 25, 2022
 *** Revive encrypted file params with new CS
+*** Convert all of bisos.crypt to cs. Keep everything as is as icm. Pass through convertIcmToCs
+*** Revive bpo-vault.cs and bpo-gpg.cs
+*** Use vault and gpg to encrypt/decrypt fps. Update fps lib for that.
 *** Revive and complete MARMEE with new CS
+*** Convert all of bisos.crypt to cs. Keep everything as is as icm. Pass through convertIcmToCs
 *** ----P2::  All of above 2 weeks? ---- Due Oct 6, 2022
 *** Build roSiteRegistrar.cs
 *** Pass pkgs through git and publish on pypi
@@ -479,6 +483,7 @@ if bpf.OpSubProc(outcome=cmndOutcome, cwd=someDirBase, log=1).bash(
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *TODOs, Problems And Next Steps:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
+** TODO Capture this: https://tilde.town/~ramin_hal9001/articles/emacs-unix-04_lisp-does-fp-better-than-bash.html
 ** TODO echo 256 | sudo tee /proc/sys/fs/inotify/max_user_instances
 ** TODO For testing Use https://www.mail-tester.com/
 ** TODO Capture  https://en.wikipedia.org/wiki/Comparison_of_mail_servers for BISOS-Mail.
