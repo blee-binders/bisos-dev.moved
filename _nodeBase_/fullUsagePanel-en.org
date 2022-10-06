@@ -115,13 +115,31 @@
 *** WAITING See if we can eliminate ast modules. Use log for file, line
 *** DONE Re-visit convertIcmToCs.sh
 *** ===== P1:: All of above 1 week? =====  Due Sept 22, 2022 ---Completed Sept 25, 2022
-*** Revive encrypted file params with new CS
-*** Convert all of bisos.crypt to cs. Keep everything as is as icm. Pass through convertIcmToCs
-*** Revive bpo-vault.cs and bpo-gpg.cs
-*** Use vault and gpg to encrypt/decrypt fps. Update fps lib for that.
-*** Revive and complete MARMEE with new CS
-*** Convert all of bisos.crypt to cs. Keep everything as is as icm. Pass through convertIcmToCs
+*** DONE Revive encrypted file params with new CS
+*** DONE Revive bpo-vault.cs and bpo-gpg.cs
+*** DONE Convert all of bisos.crypt to cs. Keep everything as is as icm. Pass through convertIcmToCs
+*** DONE Use vault and gpg to encrypt/decrypt fps. Update fps lib for that.
+*** DONE Convert all of bisos.crypt to cs. Keep everything as is as icm. Pass through convertIcmToCs
+*** ---- Revive and complete MARMEE with new CS ----
+*** Render obsoleted saiInMailControl.py --- Replace it with aasInFps.py
+*** Rename saiInMailOfflineimap.py to aasInOfflineimap.py
+*** Rename marmeeSaiInMail.cs to marmeeAasIn.cs
+*** Convert  -- gmailOauth2.cs --- Keep old as gmailOauth2Icm.cs
+*** Complete -- gmailOauth2.cs, A full fledged with ins and outs in the marmee space
+*** Convert  -- qmail-remote.cs --- Keep old as qmail-remoteIcm.cs
+*** Complete marmeeAasIn.cs based on gmailOauth2.cs outputs (imap retreives)
+*** Complete qmail-remote.cs based on gmailOauth2.cs outputs
+*** Automate continous running of marmeeAasIn.cs
+*** Cleanup marmee as package
+*** Use marmee live on multiple machines informally
 *** ----P2::  All of above 2 weeks? ---- Due Oct 6, 2022
+*** --------------  EmacsConf ------------
+*** Edit summary on wiki, similar to 2021
+*** Verify reveal  machinary from last year
+*** Add all the drawings --- Add graphics to latex drawing
+*** Start an early 0.1 base. Experiment with voice recordings
+*** Improve latex build machinary along with 120033
+*** -------------- Release of CS and Marmee On Multiple Machines ------------
 *** Build roSiteRegistrar.cs
 *** Pass pkgs through git and publish on pypi
 *** Remotely test roSiteRegistrar.cs
