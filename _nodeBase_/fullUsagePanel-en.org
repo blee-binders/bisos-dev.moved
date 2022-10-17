@@ -121,14 +121,20 @@
 *** DONE Use vault and gpg to encrypt/decrypt fps. Update fps lib for that.
 *** DONE Convert all of bisos.crypt to cs. Keep everything as is as icm. Pass through convertIcmToCs
 *** ---- Revive and complete MARMEE with new CS ----
-*** Render obsoleted saiInMailControl.py --- Replace it with aasInFps.py
-*** Rename saiInMailOfflineimap.py to aasInOfflineimap.py
-*** Rename marmeeSaiInMail.cs to marmeeAasIn.cs
-*** Convert  -- gmailOauth2.cs --- Keep old as gmailOauth2Icm.cs
-*** Complete -- gmailOauth2.cs, A full fledged with ins and outs in the marmee space
-*** Convert  -- qmail-remote.cs --- Keep old as qmail-remoteIcm.cs
-*** Complete marmeeAasIn.cs based on gmailOauth2.cs outputs (imap retreives)
-*** Complete qmail-remote.cs based on gmailOauth2.cs outputs
+*** WAITING Render obsoleted saiInMailControl.py --- Replace it with aasInFps.py
+*** WAITING Rename saiInMailOfflineimap.py to aasInOfflineimap.py
+*** DONE Rename marmeeSaiInMail.cs to marmeeAasIn.cs
+*** DONE Convert  -- gmailOauth2.cs --- Keep old as gmailOauth2Icm.cs
+*** DONE Convert  -- qmail-remote.cs --- Keep old as qmail-remoteIcm.cs
+*** DONE Add to aasMarmeeManage.cs support for oAuthCredentials and outgoing accounts
+**** DONE identift Oauth Params and ClsFp them with secret being fpCrypt
+**** DONE Set initial setups in niche
+**** DONE Consider aasMarmeeManage.cs on top of aasInFps.py aasOutFps.py aasGeneralFps.py
+*** DONE Complete -- marmeeGmailOauth2.cs, A full fledged with ins and outs in the marmee space
+**** DONE Read credentials from aas/marmee/gmail/general/oauth2/secret ...
+**** DONE Write tokens to gmailAcctBases
+*** TODO Complete marmeeAasIn.cs based on gmailOauth2.py outputs (imap retreives)
+*** TODO Complete qmail-remote.cs based on gmailOauth2.py outputs
 *** Automate continous running of marmeeAasIn.cs
 *** Cleanup marmee as package
 *** Use marmee live on multiple machines informally
@@ -139,6 +145,7 @@
 *** Add all the drawings --- Add graphics to latex drawing
 *** Start an early 0.1 base. Experiment with voice recordings
 *** Improve latex build machinary along with 120033
+*** Drive reveal in parallel with 180051
 *** -------------- Release of CS and Marmee On Multiple Machines ------------
 *** Build roSiteRegistrar.cs
 *** Pass pkgs through git and publish on pypi
@@ -504,6 +511,7 @@ if bpf.OpSubProc(outcome=cmndOutcome, cwd=someDirBase, log=1).bash(
 ** TODO Capture this: https://tilde.town/~ramin_hal9001/articles/emacs-unix-04_lisp-does-fp-better-than-bash.html
 ** TODO echo 256 | sudo tee /proc/sys/fs/inotify/max_user_instances
 ** TODO For testing Use https://www.mail-tester.com/
+** TODO Capture this: Qmail NOTES https://notes.sagredo.eu/en/qmail-notes-185/configuring-dkim-for-qmail-92.html
 ** TODO Capture  https://en.wikipedia.org/wiki/Comparison_of_mail_servers for BISOS-Mail.
 ** TODO keepassxc bins prep is missing.
 ** TODO  to ####+BEGIN: blee:bxPanel:linkWithTreeElem  add :folding? nil
