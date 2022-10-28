@@ -39,6 +39,7 @@
 *   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bxde-dev/_nodeBase_")][ =bxde-dev= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bxde-model/_nodeBase_")][ =bxde-model= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/connectivity/_nodeBase_")][ =connectivity= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/desktop/_nodeBase_")][ =desktop= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/espoused/_nodeBase_")][ =espoused= ]] *|*
 *   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/non-libre-halaal/_nodeBase_")][ =non-libre-halaal= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/overview")][overview]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/panelsRoot")][panelsRoot]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/system-container/_nodeBase_")][ =system-container= ]] *|*
 *   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/_nodeBase_")][ =blee-binders= ]] *|*
+*                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_                          [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Overview" :anchor "Panel"
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Overview:* |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
@@ -47,7 +48,7 @@
 ** Mohammad-Javad Larijani
 ** ----
 ** به سویِ یک محیط زیست رقمی کامل و جامع
-** در چهار چوبِ حلال وجودیت و با هم زندگانی
+** در چهار چوبِ حلال وجودیت چند وجودیها و با هم زندگانی
 ** بر پایه:
 ** The Libre-Halaal ByStar Digital Ecosystem
 ** و:
@@ -56,7 +57,7 @@
 ** Blee: Bystar Libre-Halaal Emacs usage Environment
 ** ----
 ** ----
-** Towards A Complete, Individual Oriented Digital Ecosystem
+** Towards A Complete, Individualized Edge Oriented Digital Ecosystem
 ** In The Libre-Halaal And Convivial Quadrant
 ** Based On:
 ** The Libre-Halaal ByStar Digital Ecosystem
@@ -73,11 +74,314 @@
 **
 ** Development Agenda and plans.
 ** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Phases, Implementation And Schedules" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Phases, Implementation And Schedules:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+#+caption: Development Table
+| [[Phases]]  | Start Date | Completion | Duration | Status  | Comments                                   |
+|---------+------------+------------+----------+---------+--------------------------------------------|
+| [[Phase-1]] | 2022-07-29 | ---        | 2 wks    | Started | Encrypted File Parameter & Marmee          |
+| [[Phase-2]] | ---        | ---        | 5 wks    | Planned | LCNT Cleanups & Modernization & 120033     |
+| [[Phase-3]] | ---        | ---        | 6 wks    | Planned | CS, GitShROP, Pals, Qmail+Jekyl, CleanBoot |
+| [[Phase-4]] | ---        | ---        | 3 wks    | Planned | Transition mohsen.byname with Old Regs     |
+| [[Phase-5]] | ---        | ---        | 6 wks    | Planned | RO&DomainRegistrars, Batch PALS Creation   |
+| [[Phase-6]] | ---        | ---        | 4 wks    | Planned | Transition of Existing Sites               |
+| [[Phase-7]] | ---        | ---        | 6 wks    | Planned | Django Based Services Creation             |
+| [[Phase-8]] | ---        | ---        | 4 wks    | Planned | Cleanups And Release                       |
+|---------+------------+------------+----------+---------+--------------------------------------------|
+
+ End Of Phase-4                        16 weeks --- 4 months
+ End Of Phase-4                        26 weeks --- 6.5 months
+ End of Phase-8                        38 weeks --- 9.5 months
+
+** +
+** Next Steps
+*** +
+*** --------------  Sept 15, 2022 Start Date ---------------
+*** DONE Complete ro_fps in ro.py csRos-manage.cs
+*** DONE Add menu to fpCls as cmnd
+*** TODO Cleanup ro_fps and fpCls and Fully use FpCsParam and Rename to FpCmndParamBase
+*** DONE Add :ro noCli to classHead --- Sets up rtInvConstraints and adds roSapPath as pyInv.
+*** DONE With :ro "py" provide code for remote inv. Test pyInv and pyRoInv
+*** TODO Take code from examples/roPy_csu.py and include it in dblock :ro py
+*** DONE Create new snippets for file segments and new dblocks --
+*** DONE For cs-mu use csExamples.cs as template -- Identify new needed dblocks (b:py3:cs:file/controls + inMainExpected Symbols)
+*** DONE For cs-u use examples/parsArgsStdinCmndResult_csu.py -- Identify sections
+*** DONE Identify all old dblocks and modernize them
+*** WAITING For templates get to 0 typing warnings -- Done in csExamples.cs not parsArgsStdinCmndResult_csu.py
+*** DONE Cleanup b. b.cs and b_io
+*** DONE Start with b_io, drive it with csExamples.cs
+*** WAITING See if we can eliminate ast modules. Use log for file, line
+*** DONE Re-visit convertIcmToCs.sh
+*** ===== P1:: All of above 1 week? =====  Due Sept 22, 2022 ---Completed Sept 25, 2022
+*** DONE Revive encrypted file params with new CS
+*** DONE Revive bpo-vault.cs and bpo-gpg.cs
+*** DONE Convert all of bisos.crypt to cs. Keep everything as is as icm. Pass through convertIcmToCs
+*** DONE Use vault and gpg to encrypt/decrypt fps. Update fps lib for that.
+*** DONE Convert all of bisos.crypt to cs. Keep everything as is as icm. Pass through convertIcmToCs
+*** ---- Revive and complete MARMEE with new CS ----
+*** WAITING Render obsoleted saiInMailControl.py --- Replace it with aasInFps.py
+*** WAITING Rename saiInMailOfflineimap.py to aasInOfflineimap.py
+*** DONE Rename marmeeSaiInMail.cs to marmeeAasIn.cs
+*** DONE Convert  -- gmailOauth2.cs --- Keep old as gmailOauth2Icm.cs
+*** DONE Convert  -- qmail-remote.cs --- Keep old as qmail-remoteIcm.cs
+*** DONE Add to aasMarmeeManage.cs support for oAuthCredentials and outgoing accounts
+**** DONE identift Oauth Params and ClsFp them with secret being fpCrypt
+**** DONE Set initial setups in niche
+**** DONE Consider aasMarmeeManage.cs on top of aasInFps.py aasOutFps.py aasGeneralFps.py
+*** DONE Complete -- marmeeGmailOauth2.cs, A full fledged with ins and outs in the marmee space
+**** DONE Read credentials from aas/marmee/gmail/general/oauth2/secret ...
+**** DONE Write tokens to gmailAcctBases
+*** TODO Complete marmeeAasIn.cs based on gmailOauth2.py outputs (imap retreives)
+*** TODO Complete qmail-remote.cs based on gmailOauth2.py outputs
+*** Automate continous running of marmeeAasIn.cs
+*** Cleanup marmee as package
+*** Use marmee live on multiple machines informally
+*** ----P2::  All of above 2 weeks? ---- Due Oct 6, 2022
+*** --------------  EmacsConf ------------
+*** Edit summary on wiki, similar to 2021
+*** Verify reveal  machinary from last year
+*** Add all the drawings --- Add graphics to latex drawing
+*** Start an early 0.1 base. Experiment with voice recordings
+*** Improve latex build machinary along with 120033
+*** Drive reveal in parallel with 180051
+*** -------------- Release of CS and Marmee On Multiple Machines ------------
+*** Build roSiteRegistrar.cs
+*** Pass pkgs through git and publish on pypi
+*** Remotely test roSiteRegistrar.cs
+*** PyCS Documentaion
+*** ---- P3:: All of above 1 week? ----
+*** Rebuild from scratch pure and VM
+*** Add bso creation to bpo creation in python
+*** Redo site construction
+*** ---- P4:: All of above 2 weeks? ----
+*** Revivie Pals
+*** With PALS redo Qmail and Jekyl
+*** With PALS redo plone
+*** Build new registrars
+*** Site construction with new registrars
+*** ---- P5:: All of above 4.5 weeks? ----
+*** Transition mohsen.byname
+***  ---- P6:: All of above 2 weeks? ----
+*** -------------------------------------------------------
+*** Grand total  1 + 2 + .5 + 2 + 5 + 2  == 12.5  (Dec 31, 2022)
+*** 12033 publication 4 weeks
+*** ----------------------------------------------(Jan 31, 2023)
+*** [[Phase-5]]   6-weeks
+*** [[Phase-6]]   4 Weeks
+*** ----------------------------------------------(April  15, 2023)
+*** [[Phase 7]]  6 weeks
+*** [[Phase 8]]  4 weeks
+*** ---------------------------------------------(July 15, 2023)
+*** -
+** Encrypted File Parameter & Marmee --- <<Phase-1>> --- 2 Weeks Total
+[[Phase-1.1]]   19h
+[[Phase-1.2]]   25h
+[[Phase-1.3]]   37h
+-------------------
+81 Hours
+
+*** File Parameters Design --- IMPORTANT -- <<Phase-1.1>>
+**** +
+**** Key Decisions. We will use Symetric Keys. SymKeys are encrypted with pubKeys. Passwds are in KeePass Vault.
+**** Each fp may have an encryptionType FV. Usually bxSym. fp has an encryptionScope curBpo, site, etc.
+**** Each BPO has a GPG repo. That GPG repo is used as base.
+**** Each BPO has a Vaults repo.
+**** Each BPO has a secrets repo. Which contains the  encrypted symKey.
+**** Keys in GPG repo are created with purpose as index. Their passwords are auto gened and stored in BPO-Vault.
+**** The following inits are assumed. BPO-PGP-Key, BPO-Vault, BPO-Secret FP.
+**** On FP Write, Param is sym-encrypted with decrypted symKey using PGP-repo & vault. scope & type is recorded.
+**** On FP Read, base don scope and type, Param is sym-decrypted with decrypted symKey using PGP-repo & vault.
+**** Implemetation Order:
+***** +
+***** TODO Create a bisos crypt panel
+***** [4h] Build a in bisos.crypt build bx-vault library based on pykeepass-cache.
+***** [4h] Build a bisos.gpg library.
+***** [3h] Create, vault, gpg and secrets repos for a given bpo.
+***** [6h] Revisit bpf.fp library.
+***** [2h] Update FP Panel And Capture new info
+***** -
+**** Totals: 19h
+**** -
+*** Complete MARMEE Transition --- IMPORTANT -- <<Phase-1.2>>
+**** +
+**** Implementation Order:
+***** 1) [4h]Build offlineimaprc based on encFPs.
+Use Encrypted FPs in Marmee's context for Gmail InMail and OutMail context.
+***** 2) [4h] Absorbe gmail oauth in bx, based on FPs.
+***** 3) [3h] Setup qmail as in 1005 --- Cultivate eoqMail (Edge-Oriented QMail)
+***** 4) [4h] Make qmail-remote work right with encrypted FPs --- Absorb send.py
+***** 5) [8h] Transition rest of the old Marme features: Mail Sending and DSN Processing.
+***** 6) [3h] Cleanup and get rid of old marme files.
+***** 7) [3h] Update Marmee Panel And Capture new info
+**** Totals: 25h
+**** -
+*** Bootstrap Self-Contained BISOS  --- IMPORTANT -- <<Phase-1.3>>
+**** +
+**** [2h] Pass everything through git
+**** [3h] Push all pkgs to pypi
+**** [8h] Rebuild and test with production venv
+**** [24h] Rebuild and test in VM.
+**** Totals: 37h
+**** -
+** CS Library Transition
+*** Document The Design In Panel
+***  Module Restructuring and cleanups.
+**** +
+**** DONE Redo and cleanup examples.py <2022-08-21 Sun 22:35>
+**** DONE Remove examples from cs.py <2022-08-21 Sun 22:35>
+**** DONE In cs.py global fix all ucf refs and all TM, EH, LOG
+**** DONE Cleanup io and and bpf
+**** DONE End to end test with new examples
+**** DONE Redo and cleanup inCmnd.py
+**** DONE Remove in-cmnds from cs.py
+**** DONE End to end test with new inCmnd.py
+**** DONE Redo and cleanup runArgs.py
+**** DONE Remove runArgs from cs.py
+**** DONE End to end test with new runArgs.py
+**** TODO Redo and cleanup param.py
+**** DONE Remove param.py from cs.py
+**** WAITING End to end test with new param.py   ~NEXT~
+**** TODO Redo and cleanup arg.py   ~NEXT~
+**** DONE Remove arg.py from cs.py
+**** WAITING End to end test with new arg.py
+**** Cleanup the remaining cs.py
+**** TODO Absorb gitShRemOp in rem.py
+**** WAITING Absorb aipx.cs in cs/bin
+
+**** WAITING Re-visit logging in io
+**** DONE Cleanup all of io
+**** Cleanup all of bpf
+**** WAITING Re-do dblocks
+**** WAITING Build mass transitioner convertIcmToCs.sh
+**** DONE Automate CS importation with dblock
+**** -
+*** -
+***  Addition of RPyC Invoker/Performer
+**** +
+**** DONE *TODO In cmnd replace interactive with rtInv ~NEXT~ Urgent
+**** Revisit work done with gitSh as transport
+**** Live with a simple RPyC Performer for now
+**** Add invoker feature to cmnd dispatch
+**** Revisit cs.Cmnd for remote invocation programtically and from cmndLine.
+**** Build csRoManager.cs
+**** Build csAipx.cs
+**** -
+***  Testing And Examples
+**** +
+**** Create test examples for various features
+**** -
+***  Mass transition to new CS
+**** +
+**** Convert all of Marmee to new CS
+**** Continue with File Parameters
+**** -
+*** LCNT Cleanups & Modernization & 120033 --- <<Phase-2>>  --- 5 Weeks Total
+
+***  LCNT Cleanups And Modernization --- Phase-2.1
+**** +
+**** bisos.io --- io.log  io.eh. io.ann io.tm
+**** bisos.cs --- cs.cmnd cs.exChap
+**** -
+*** TODO Split 120033 into Two --- Phase-2.2
+**** +
+**** bisos.io --- io.log  io.eh. io.ann io.tm
+**** bisos.cs --- cs.cmnd cs.exChap
+**** -
+*** TODO Update Both Documents --- Phase-2.3
+**** +
+**** bisos.io --- io.log  io.eh. io.ann io.tm
+**** bisos.cs --- cs.cmnd cs.exChap
+**** -
+*** TODO Run Docs Through Microsoft Word and Others --- Phase-2.3
+**** +
+**** bisos.io --- io.log  io.eh. io.ann io.tm
+**** bisos.cs --- cs.cmnd cs.exChap
+**** -
+*** TODO Publish Both Documents --- Phase-2.4
+**** +
+**** bisos.io --- io.log  io.eh. io.ann io.tm
+**** bisos.cs --- cs.cmnd cs.exChap
+**** -
+** CS, GitShROP, Pals, Qmail+Jekyl, CleanBoot --- <<Phase-3>>  --- 6 Weeks Total
+*** TODO Transition From ICM To CS --- Phase-3.1  --- 5 Weeks Total
+**** +
+**** bisos.io --- io.log  io.eh. io.ann io.tm
+**** bisos.cs --- cs.cmnd cs.exChap
+**** -
+*** TODO Complete GitSh Remote Operations --- Phase-3.2
+*** +
+*** A Starting Point Panel
+*** -
+*** TODO Test Out A Registrar service --- Phase-3.2.1
+**** +
+**** With Object-Ids
+**** -
+*** TODO Complete Pals Base Implementation  --- Phase-3.3
+**** +
+**** A Starting Point Panel
+**** -
+*** TODO Use Pals To Implement Jekyl  --- Phase-3.4
+**** +
+**** Introduce concept of Self-Contained-BPOs
+**** -
+*** TODO Use Pals To Implement Geneweb  --- Phase-3.4
+**** +
+**** Introduce concept of Self-Contained-BPOs
+**** -
+*** TODO Use Pals To Implement qmail  --- Phase-3.5
+**** +
+**** Introduce concept of Self-Contained-BPOs
+**** -
+*** TODO Release Phase 3  --- Phase-3.6
+**** +
+**** Introduce concept of Self-Contained-BPOs
+**** -
+** Transition mohsen.byname with Old Registrars  --- <<Phase-4>>  --- 3 Weeks Total
+*** TODO Rebuild Exisiting Physical And VM  --- Phase-4.1
+**** +
+**** Rebuild Physical and VMs based on existing
+**** -
+*** TODO mohsen.byname Transition Based on Exisiting  --- Phase-4.2
+**** +
+**** Rebuild Physical and VMs based on existing
+**** -
+** RO&DomainRegistrars, Batch PALS Creation  --- <<Phase-5>> 6 Weeks Total
+*** TODO Re-Visit Site Bootstrap  --- Phase-5.1
+**** +
+**** Rebuild Physical and VMs based on existing
+**** -
+***** TODO Re-Create All Registrations Based on Services  --- Phase-5.2
+**** +
+**** Rebuild Physical and VMs based on existing
+**** -
+*** TODO Update And Re-Implement BPO Creation --- Phase-5.3
+**** +
+**** Rebuild Physical and VMs based on existing
+**** -
+*** TODO Create Domain Registrars --- Phase-5.4
+**** +
+**** Rebuild Physical and VMs based on existing
+**** -
+*** TODO Batch Pals Creation --- Phase-5.4
+**** +
+**** Rebuild Physical and VMs based on existing
+**** -
+** Transition of Existing Sites --- <<Phase-6>> 4 Weeks
+*** +
+*** Rebuild Physical and VMs based on existing
+*** -
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Scheduled Next Steps" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Scheduled Next Steps:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
-** +
+** TODO Evaluate pykeepass and pykeepass-cache   --- gpg --gen-random --armor 1 14
+** TODO Buy into RPyC In a big way.
+*** https://programtalk.com/python-examples/rpyc.utils.factory.ssl_connect/
+*** https://docs.python.org/3/library/ssl.html
+** TODO Create a "BISOS Overview" Panel. In there, have a Fundamental Constructs Panels.
+In document start with Unix constructs, Emacs constructs, Org-Mode Constructs, Git Constructs.
 ** TODO /bisos/venv/py3/dev-bisos3/bin/pip install google-api-python-client 
 ** TODO /bisos/venv/py3/dev-bisos3/bin/pip install google-auth-oauthlib
 ** TODO IMPORTANT -- Digest https://github.com/larsmagne/make-mta
@@ -205,8 +509,10 @@ if bpf.OpSubProc(outcome=cmndOutcome, cwd=someDirBase, log=1).bash(
 ####+END
 ** +
 ** TODO pandoc should be brought over at some point in one of the binspreps.
+** TODO Capture this: https://tilde.town/~ramin_hal9001/articles/emacs-unix-04_lisp-does-fp-better-than-bash.html
 ** TODO echo 256 | sudo tee /proc/sys/fs/inotify/max_user_instances
 ** TODO For testing Use https://www.mail-tester.com/
+** TODO Capture this: Qmail NOTES https://notes.sagredo.eu/en/qmail-notes-185/configuring-dkim-for-qmail-92.html
 ** TODO Capture  https://en.wikipedia.org/wiki/Comparison_of_mail_servers for BISOS-Mail.
 ** TODO keepassxc bins prep is missing.
 ** TODO  to ####+BEGIN: blee:bxPanel:linkWithTreeElem  add :folding? nil
@@ -385,6 +691,9 @@ _docStringEnd_
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *New Planned Features:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
+** Use Django https://github.com/viewflow/viewflow
+** In BISOS documentation, Introduce BISDF (ByStar Internet Services Development Framework)
+** Replace .ttytex with .mtx  --- Main TeX module.
 ** Use gRPC -- Not OpenAPI, REST, etc.
 ** https://github.com/tomyjwu/python-microsrvices-with-grpc
 ** https://realpython.com/python-microservices-grpc/
