@@ -79,17 +79,17 @@
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Phases, Implementation And Schedules:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 #+caption: Development Table
-| [[Phases]]  | Start Date | Completion | Duration | Status  | Comments                                   |
-|---------+------------+------------+----------+---------+--------------------------------------------|
-| [[Phase-1]] | 2022-07-29 | ---        | 2 wks    | Started | Encrypted File Parameter & Marmee          |
-| [[Phase-2]] | ---        | ---        | 5 wks    | Planned | LCNT Cleanups & Modernization & 120033     |
-| [[Phase-3]] | ---        | ---        | 6 wks    | Planned | CS, GitShROP, Pals, Qmail+Jekyl, CleanBoot |
-| [[Phase-4]] | ---        | ---        | 3 wks    | Planned | Transition mohsen.byname with Old Regs     |
-| [[Phase-5]] | ---        | ---        | 6 wks    | Planned | RO&DomainRegistrars, Batch PALS Creation   |
-| [[Phase-6]] | ---        | ---        | 4 wks    | Planned | Transition of Existing Sites               |
-| [[Phase-7]] | ---        | ---        | 6 wks    | Planned | Django Based Services Creation             |
-| [[Phase-8]] | ---        | ---        | 4 wks    | Planned | Cleanups And Release                       |
-|---------+------------+------------+----------+---------+--------------------------------------------|
+| [[Phases]]  | Start Date | Completion | Duration | Status  | Comments                                 |
+|---------+------------+------------+----------+---------+------------------------------------------|
+| [[Phase-1]] | 2022-07-29 | ---        | 2 wks    | Started | Encrypted File Parameter & Marmee        |
+| [[Phase-2]] | ---        | ---        | 5 wks    | Planned | LCNT Cleanups & Modernization & 120033   |
+| [[Phase-3]] | ---        | ---        | 6 wks    | Planned | CS,  Pals, Qmail, Hugo, CleanBoot        |
+| [[Phase-4]] | ---        | ---        | 3 wks    | Planned | Transition mohsen.byname with Old Regs   |
+| [[Phase-5]] | ---        | ---        | 6 wks    | Planned | RO&DomainRegistrars, Batch PALS Creation |
+| [[Phase-6]] | ---        | ---        | 4 wks    | Planned | Transition of Existing Sites             |
+| [[Phase-7]] | ---        | ---        | 6 wks    | Planned | Django Based Services Creation           |
+| [[Phase-8]] | ---        | ---        | 4 wks    | Planned | Cleanups And Release                     |
+|---------+------------+------------+----------+---------+------------------------------------------|
 
  End Of Phase-4                        16 weeks --- 4 months
  End Of Phase-4                        26 weeks --- 6.5 months
@@ -133,32 +133,40 @@
 *** DONE Complete -- marmeeGmailOauth2.cs, A full fledged with ins and outs in the marmee space
 **** DONE Read credentials from aas/marmee/gmail/general/oauth2/secret ...
 **** DONE Write tokens to gmailAcctBases
-*** TODO Complete marmeeAasIn.cs based on gmailOauth2.py outputs (imap retreives)
-*** TODO Complete qmail-remote.cs based on gmailOauth2.py outputs
+*** WAITING Complete marmeeAasIn.cs based on gmailOauth2.py outputs (imap retreives)
+*** WAITING Complete qmail-remote.cs based on gmailOauth2.py outputs
 *** Automate continous running of marmeeAasIn.cs
-*** Cleanup marmee as package
+*** DONE Cleanup marmee as package
+*** DONE Add currents specification for use in panles
+*** DONE Setup marmee panel
+*** TODO Complete blee/emacs-developers-requests repo.
 *** Use marmee live on multiple machines informally
 *** ----P2::  All of above 2 weeks? ---- Due Oct 6, 2022
-*** --------------  EmacsConf ------------
-*** Edit summary on wiki, similar to 2021
-*** Verify reveal  machinary from last year
-*** Add all the drawings --- Add graphics to latex drawing
-*** Start an early 0.1 base. Experiment with voice recordings
-*** Improve latex build machinary along with 120033
-*** Drive reveal in parallel with 180051
+*** --------------  EmacsConf Begin ------------  Oct 24, 2022
+*** TODO Edit summary on wiki, similar to 2021 --- Target Oct 29
+*** DONE Verify reveal  machinary from last year
+*** TODO Absorb and complete bisos-apps/lcnt panels
+*** WAITING Add all the drawings --- Add graphics to latex drawing
+*** TODO Start an early 0.1 base. Experiment with voice recordings  --- Target Oct 29
+*** TODO Absorbe Sacha's Closed Captioning Tools
+*** TODO Complete Video --- Target  November 18
+*** TODO Improve latex build machinary along with 120033
+*** TODO Drive reveal in parallel with 180051
+*** --------------  EmacsConf End ------------  December 4, 2022
 *** -------------- Release of CS and Marmee On Multiple Machines ------------
 *** Build roSiteRegistrar.cs
 *** Pass pkgs through git and publish on pypi
 *** Remotely test roSiteRegistrar.cs
 *** PyCS Documentaion
-*** ---- P3:: All of above 1 week? ----
+*** Release Marmee and verify on multiple machines
+*** ---- P3:: All of above 1 week? ----   Target November 14
 *** Rebuild from scratch pure and VM
 *** Add bso creation to bpo creation in python
 *** Redo site construction
 *** ---- P4:: All of above 2 weeks? ----
 *** Revivie Pals
-*** With PALS redo Qmail and Jekyl
-*** With PALS redo plone
+*** With PALS redo Qmail and Hugo
+*** With PALS redo plone (Perhaps NOT)
 *** Build new registrars
 *** Site construction with new registrars
 *** ---- P5:: All of above 4.5 weeks? ----
