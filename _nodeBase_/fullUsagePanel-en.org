@@ -139,20 +139,41 @@
 *** DONE Cleanup marmee as package
 *** DONE Add currents specification for use in panles
 *** DONE Setup marmee panel
-*** TODO Complete blee/emacs-developers-requests repo.
+*** WAITING Complete blee/emacs-developers-requests repo.
 *** Use marmee live on multiple machines informally
-*** ----P2::  All of above 2 weeks? ---- Due Oct 6, 2022
+*** ----P2::  All of above 2 weeks? ---- Due Dec 6, 2022 (Updated on Nov 23rd)
 *** --------------  EmacsConf Begin ------------  Oct 24, 2022
-*** TODO Edit summary on wiki, similar to 2021 --- Target Oct 29
+*** DONE Edit summary on wiki, similar to 2021 --- Target Oct 29
 *** DONE Verify reveal  machinary from last year
-*** TODO Absorb and complete bisos-apps/lcnt panels
-*** WAITING Add all the drawings --- Add graphics to latex drawing
-*** TODO Start an early 0.1 base. Experiment with voice recordings  --- Target Oct 29
-*** TODO Absorbe Sacha's Closed Captioning Tools
-*** TODO Complete Video --- Target  November 18
-*** TODO Improve latex build machinary along with 120033
-*** TODO Drive reveal in parallel with 180051
+*** DONE Absorb and complete bisos-apps/lcnt panels
+*** DONE Add all the drawings --- Add graphics to latex drawing
+*** DONE Start an early 0.1 base. Experiment with voice recordings  --- Target Oct 29
+*** DONE Absorbe Sacha's Closed Captioning Tools
+*** DONE Complete Video --- Target  November 18
+*** DONE Improve latex build machinary along with 120033
+*** DONE Drive reveal in parallel with 180051
 *** --------------  EmacsConf End ------------  December 4, 2022
+*** --------------  Nature Of Polyexistence Publication Begin ------------  December 15, 2022
+*** TODO Machinary-LaTeX: Cleanup and improvements of Book and Screencasting (MM) latex machinary
+*** TODO Machinary-LaTeX-Common: conditionals
+*** TODO Machinary-LaTeX-Book:
+*** TODO Machinary-LaTeX-MM:
+*** TODO Machinary-LaTeX-MM: BISOS-LCNT: An Emacs Centered Content Generation And Publication Platform
+*** TODO Machinary-Dblocks:
+*** TODO Machinary-Sippets:
+*** TODO Machinary-Polymode:
+*** TODO Machinary-BookPublisher:
+***                                       =======================
+*** TODO Create two LCNTs 120033 and xxx and a common
+*** TODO Progress Preface
+*** TODO Absorb attributions in PolyCapitalism
+*** TODO Absorb FPF policies in Open-source
+*** TODO Absorb all of existing lcnt/lgpc and lcnt/lgcc
+*** TODO Break into 5 parts
+*** TODO Sort out economics is for the donkey
+*** -
+*** --------------  Nature Of Polyexistence Publication End  ------------  January 31, 2023
+
 *** -------------- Release of CS and Marmee On Multiple Machines ------------
 *** Build roSiteRegistrar.cs
 *** Pass pkgs through git and publish on pypi
@@ -516,6 +537,7 @@ if bpf.OpSubProc(outcome=cmndOutcome, cwd=someDirBase, log=1).bash(
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *TODOs, Problems And Next Steps:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
+** TODO Create a bisos.systemd manager package --- https://github.com/torfsen/python-systemd-tutorial
 ** TODO Add to presentation \usepackage{qrcode}  %%% Must come after beamerarticle
 ** TODO pandoc should be brought over at some point in one of the binspreps.
 ** TODO Capture this: https://tilde.town/~ramin_hal9001/articles/emacs-unix-04_lisp-does-fp-better-than-bash.html
