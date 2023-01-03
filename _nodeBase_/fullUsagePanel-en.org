@@ -153,7 +153,7 @@
 *** DONE Improve latex build machinary along with 120033
 *** DONE Drive reveal in parallel with 180051
 *** --------------  EmacsConf End ------------  December 4, 2022
-*** --------------  Nature Of Polyexistence Publication Begin ------------  December 15, 2022
+*** --- <<LcntMachinary>>---  Nature Of Polyexistence Publication Begin ------------  December 15, 2022
 *** TODO Machinary-LaTeX: Cleanup and improvements of Book and Screencasting (MM) latex machinary
 *** TODO Machinary-LaTeX-Common: conditionals
 *** TODO Machinary-LaTeX-Book:
@@ -162,15 +162,19 @@
 *** TODO Machinary-Dblocks:
 *** TODO Machinary-Sippets:
 *** TODO Machinary-Polymode:
-*** TODO Machinary-BookPublisher:
+*** TODO Machinary-BookPublisher: As public LCNT info
+*** TODO Machinary-BuildProcess: Bibtexpolicies for lcnt auto generations
+*** TODO Machinary-General: Customized .gitignore for lcnt repo-s
+*** TODO Machinary-General: Capture shorttitle in dblocks
+*** TODO Machinary-General: Automate per chapter pdf generation with TOC --- See Notes
+- Automate dblock for creation of includeonly from command line from within chapter
+- Add whenComplete vs whenPartial --- Drive them with Controls fileParams
+- For when partial import etoc
+- Make all the parts be includes, so they don't show up in partial
+- Add -p chapters to lcntProc.sh and include them as org-commands in chapter files.
+-
 ***                                       =======================
-*** TODO Create two LCNTs 120033 and xxx and a common
-*** TODO Progress Preface
-*** TODO Absorb attributions in PolyCapitalism
-*** TODO Absorb FPF policies in Open-source
-*** TODO Absorb all of existing lcnt/lgpc and lcnt/lgcc
-*** TODO Break into 5 parts
-*** TODO Sort out economics is for the donkey
+*** [[elisp:(find-file "/bxo/r3/iso/pip_lcnt_polyexistentals/lcnt/lgpc/permanent/polyexistentials/common/Notes.org")][/bxo/r3/iso/pip_lcnt_polyexistentals/lcnt/lgpc/permanent/polyexistentials/common/Notes.org]]
 *** -
 *** --------------  Nature Of Polyexistence Publication End  ------------  January 31, 2023
 
