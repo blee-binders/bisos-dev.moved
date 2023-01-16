@@ -162,6 +162,7 @@
 *** TODO Machinary-Dblocks:
 *** TODO Machinary-Sippets:
 *** TODO Machinary-Polymode:
+*** TODO Machinary-BibLatex: Multiple References
 *** TODO Machinary-BookPublisher: As public LCNT info
 *** TODO Machinary-BuildProcess: Bibtexpolicies for lcnt auto generations
 *** TODO Machinary-General: Customized .gitignore for lcnt repo-s
