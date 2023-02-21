@@ -154,26 +154,7 @@
 *** DONE Drive reveal in parallel with 180051
 *** --------------  EmacsConf End ------------  December 4, 2022
 *** --- <<LcntMachinary>>---  Nature Of Polyexistence Publication Begin ------------  December 15, 2022
-*** TODO Machinary-LaTeX: Cleanup and improvements of Book and Screencasting (MM) latex machinary
-*** TODO Machinary-LaTeX-Common: conditionals
-*** TODO Machinary-LaTeX-Book:
-*** TODO Machinary-LaTeX-MM:
-*** TODO Machinary-LaTeX-MM: BISOS-LCNT: An Emacs Centered Content Generation And Publication Platform
-*** TODO Machinary-Dblocks:
-*** TODO Machinary-Sippets:
-*** TODO Machinary-Polymode:
-*** TODO Machinary-BibLatex: Multiple References
-*** TODO Machinary-BookPublisher: As public LCNT info
-*** TODO Machinary-BuildProcess: Bibtexpolicies for lcnt auto generations
-*** TODO Machinary-General: Customized .gitignore for lcnt repo-s
-*** TODO Machinary-General: Capture shorttitle in dblocks
-*** TODO Machinary-General: Automate per chapter pdf generation with TOC --- See Notes
-- Automate dblock for creation of includeonly from command line from within chapter
-- Add whenComplete vs whenPartial --- Drive them with Controls fileParams
-- For when partial import etoc
-- Make all the parts be includes, so they don't show up in partial
-- Add -p chapters to lcntProc.sh and include them as org-commands in chapter files.
--
+*** /bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/evolution/_nodeBase_/fullUsagePanel-en.org
 ***                                       =======================
 *** [[elisp:(find-file "/bxo/r3/iso/pip_lcnt_polyexistentals/lcnt/lgpc/permanent/polyexistentials/common/Notes.org")][/bxo/r3/iso/pip_lcnt_polyexistentals/lcnt/lgpc/permanent/polyexistentials/common/Notes.org]]
 *** -
