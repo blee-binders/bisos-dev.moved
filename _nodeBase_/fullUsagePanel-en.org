@@ -161,6 +161,8 @@
 *** --------------  Nature Of Polyexistence Publication End  ------------  January 31, 2023
 
 *** -------------- Release of CS and Marmee On Multiple Machines ------------
+*** +
+*** TODO add /bisos/venv//py3/stable/  For non loccal tools
 *** Build roSiteRegistrar.cs
 *** Pass pkgs through git and publish on pypi
 *** Remotely test roSiteRegistrar.cs
